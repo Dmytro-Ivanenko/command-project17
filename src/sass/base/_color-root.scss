@@ -1,3 +1,35 @@
 :root{
+
+    // *** Backgrounds ***
+    --main-bcg:#84A278;
+    --modal-bcg: #FFFFFF;
     
+    // Products
+    --cream-bcg: #AEC6A5;
+    --coffee-bcg: #EFD478;
+    --milk-bcg: #D6936D;
+    --cream-img-bcg: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)),
+            #D9D9D9;
+    --coffee-img-bcg: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)),
+        #D9D9D9;
+    --milk-img-bcg:linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)),
+        #D9D9D9;
+
+    // How it`s made
+     --cow-bcg: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)),
+                #D9D9D9;
+
+
+                
+    // *** Font`s color ***
+    --first-font-color: #131313;
+    --second-font-color: #000000;
+    --alt-font-color:#FCFCFC;
+    
+    // Contact`s card font`s color
+    --time-font-color:#907E82;
+    --contacts-font-color: #D6936D;
+
+    // Other
+    --bottom-font-color: #7A7A7A;   //Напис під футером
 }
