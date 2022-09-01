@@ -1,0 +1,85 @@
+.section.gallery {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.gallery__container {
+  position: relative;
+}
+
+.gallery__img-wraper {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -24px);
+  width: 100%;
+  max-width: 279px;
+  list-style: none;
+
+  @media screen and (min-width: 767.99px) {
+    max-width: 704px;
+    transform: translate(-50%, -164px);
+  }
+
+  @media screen and (min-width: 1199.99px) {
+    transform: translate(-50%, -98px);
+    max-width: 1013px;
+  }
+}
+
+.gallery__img {
+  border-radius: 24px;
+}
+
+// количество элементов в галерее
+$max: 5;
+// длительность анимации
+$duration: 15s;
+// длительность одного шага
+$step: calc($duration / $max);
+// длительность показа одной картинки в процентах от общей длительности анимации
+$step-perc: percentage(calc(1 / $max * 2));
+// Делаем переменную с половинной длительностью анимации:
+$half-step-perc: percentage(calc(1 / $max));
+
+.gallery__item {
+  opacity: 0;
+  animation: hide $duration step-end infinite;
+
+  // имя анимации для последнего шага
+  &:nth-of-type(#{$max}n) {
+    animation-name: hide-half-step;
+  }
+
+  // задержки анимации
+  @for $item from 2 through $max {
+    &:nth-of-type(#{$max}n + #{$item}) {
+      animation-delay: $step * ($item - 1);
+    }
+  }
+}
+
+@keyframes hide {
+  0% {
+    opacity: 1;
+  }
+  #{$step-perc} {
+    opacity: 0;
+  }
+}
+
+@keyframes hide-half-step {
+  0% {
+    opacity: 1;
+  }
+  #{$half-step-perc} {
+    opacity: 0;
+  }
+}
+
+.gallery__img-wraper {
+  .gallery__item,
+  .gallery__item--static {
+    position: absolute;
+  }
+}
