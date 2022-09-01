@@ -1,0 +1,29 @@
+.contacts {
+    background-color: var(--main-bcg);
+}
+
+.contacts__item {
+    padding: 40px 32px;
+    width: 280px;
+    background: var(--card-bcg);
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+.contacts__suptitle {
+    padding: 0 23px;
+    margin-bottom: 20px;
+    background: #F8D24E;
+    border-radius: 4px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.833333;
+    display: inline-block;
+    letter-spacing: 0.04em;
+    color: var(--alt-font-color);
+    text-transform: uppercase;
+}
