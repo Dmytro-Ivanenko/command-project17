@@ -1,4 +1,5 @@
 @import './base/color-root';
+@import './base/base';
 @import './base/visually-hidden';
 @import './utils/animations';
 @import './utils/mixins';
@@ -15,5 +16,11 @@
 @import './components/footer';
 
 
+// modal
+@import './components/modal-franchise.scss';
+@import './components/modal-buy-now.scss';
+@import './components/modal-locations.scss';
+@import './components/modal-read-more.scss';
+// @import '.';
 // @import '.';
 // @import '.';
