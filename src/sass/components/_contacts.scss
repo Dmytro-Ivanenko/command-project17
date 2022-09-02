@@ -1,4 +1,14 @@
+.contacts__block {
+    position: absolute;
+    top:-325px;
+    left: 50%;
+    transform: translate(-50%);
+}
 .contacts {
+    position: relative;
+    padding-top: 1110px;
+    
+
     background-color: var(--main-bcg);
     font-family: 'Montserrat';
     font-style: normal;
@@ -21,7 +31,7 @@
 .contacts__suptitle {
     padding: 0 23px;
     margin-bottom: 20px;
-    background: #F8D24E;
+    background: var(--acc-color);
     border-radius: 4px;
     display: inline-block;
     color: var(--alt-font-color);
@@ -56,21 +66,16 @@
     display: flex;  
     flex-direction: column;
     gap: 8px;
-    margin-top: 32px;
-    margin-right: auto;
-    margin-left: auto;
+    justify-content: center;
 }
 .button {
     width: 161px;
-    text-align: center;
     background: transparent;
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 1.25;
     color: #FCFCFC;
-    border: 2px solid #F8D24E;
+    border: 2px solid var(--acc-color);
     border-radius: 10px;
     padding-top: 14px;
     padding-bottom: 14px;
