@@ -6,6 +6,7 @@
 @import './base/container';
 
 // components
+@import './components/body';
 @import './components/hero-header';
 @import './components/products';
 @import './components/about';
@@ -14,7 +15,6 @@
 @import './components/customer-reviews';
 @import './components/contacts';
 @import './components/footer';
-
 
 // modal
 @import './components/modal-franchise.scss';
