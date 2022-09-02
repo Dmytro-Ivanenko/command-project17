@@ -51,7 +51,8 @@
     font-size: 0;
 
     border: none;
-    transition: background-color 500ms linear;
+    transition: background-color 250ms linear,
+      transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
 
     &:hover,
@@ -136,4 +137,8 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 207px;
+}
+
+.slick-active > button {
+  background-color: var(--bcg-btn-hover);
 }
