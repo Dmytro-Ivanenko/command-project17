@@ -32,6 +32,7 @@
 .reviews__container {
   padding-top: 161px;
   padding-bottom: 359px;
+
   @media screen and (min-width: 768px) {
     padding-top: 218px;
     padding-bottom: 384px;
@@ -46,10 +47,13 @@
     height: 12px;
     border-radius: 50%;
     background-color: var(--bcg-btn);
+
     font-size: 0;
+
     border: none;
     transition: background-color 500ms linear;
     cursor: pointer;
+
     &:hover,
     &:focus,
     &:active {
@@ -76,9 +80,8 @@
 }
 
 .review__text {
-  max-height: 308px;
+  max-width: 280px;
   padding: 43px 50px 17px 50px;
-  max-width: 440px;
   margin: 32px auto;
 
   border-radius: 10px;
@@ -90,36 +93,38 @@
   color: var(--alt-font-color);
 
   @media screen and (min-width: 768px) {
-    background-image: none;
+    max-width: 705px;
+    padding: 29px 80px;
+    border-radius: 24px;
+
+    font-size: 14px;
     font-weight: 500;
     line-height: 1.86;
-    font-size: 14px;
-    padding: 29px 80px;
-    max-width: 705px;
-    border-radius: 24px;
   }
   @media screen and (min-width: 1200px) {
-    font-size: 16px;
-    padding: 29px 109px;
     max-width: 968px;
-    border-radius: 24px;
+    padding: 39px 109px 47px 109px;
+
+    font-size: 16px;
   }
 
-  .review__text--span {
+  & span {
     @media screen and (max-width: 767.98px) {
       display: block;
       border-bottom: var(--cr-border-bottom);
     }
   }
 }
+
 .review__name {
   display: block;
+
+  font-size: 20px;
+  font-weight: 500;
   font-style: normal;
   line-height: 1.86;
   text-align: center;
   color: var(--second-font-color);
-  font-size: 20px;
-  font-weight: 500;
 
   @media screen and (min-width: 768px) {
     font-size: 16px;
