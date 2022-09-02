@@ -1,70 +1,63 @@
-body {
-    
-    background-repeat: repeat-y;
-    background-size: 100%;
-    
-    
-}
+// body {
 
+//     background-repeat: repeat-y;
+//     background-size: 100%;
 
-// mobile
-@media screen and (max-width:767px){
+// }
 
-body {
-        background-image: url("../images/body/body-bcg-320.png");
-       
-    }
+// // mobile
+// @media screen and (max-width:767px){
 
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+// body {
+//         background-image: url("../images/body/body-bcg-320.png");
 
-        body {
-            background-image: url("../images/body/body-bcg-320@2x.png");
+//     }
 
-        }
-    }
-}
+//     @media (min-device-pixel-ratio: 2),
+//     (min-resolution: 192dpi),
+//     (min-resolution: 2dppx) {
 
+//         body {
+//             background-image: url("../images/body/body-bcg-320@2x.png");
 
-// tablet
-@media screen and (min-width:768px) {
+//         }
+//     }
+// }
 
-    body {
-        background-image: url("../images/body/body-bcg-767.png");
+// // tablet
+// @media screen and (min-width:768px) {
 
-    }
+//     body {
+//         background-image: url("../images/body/body-bcg-767.png");
 
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+//     }
 
-        body {
-            background-image: url("../images/body/body-bcg-767@2x.png");
+//     @media (min-device-pixel-ratio: 2),
+//     (min-resolution: 192dpi),
+//     (min-resolution: 2dppx) {
 
-        }
-    }
-}
+//         body {
+//             background-image: url("../images/body/body-bcg-767@2x.png");
 
+//         }
+//     }
+// }
 
+// // desktop
+// @media screen and (min-width:1200px) {
 
-// desktop
-@media screen and (min-width:1200px) {
+//     body {
+//         background-image: url("../images/body/body-bcg-1193.png");
 
-    body {
-        background-image: url("../images/body/body-bcg-1193.png");
+//     }
 
-    }
+//     @media (min-device-pixel-ratio: 2),
+//     (min-resolution: 192dpi),
+//     (min-resolution: 2dppx) {
 
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+//         body {
+//             background-image: url("../images/body/body-bcg-1193@2x.png");
 
-        body {
-            background-image: url("../images/body/body-bcg-1193@2x.png");
-
-        }
-    }
-}
-
-
+//         }
+//     }
+// }
