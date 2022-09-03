@@ -16,6 +16,7 @@
 
 @media screen and (min-width: 768px) {
 	.products-section {
+		padding-bottom: 80px;
 		background-image: url(../images/products/tablet-fone.jpg);
 	}
 }
@@ -30,6 +31,7 @@
 
 @media screen and (min-width: 1200px) {
 	.products-section {
+		padding-bottom: 65px;
 		background-image: url(../images/products/desktop-fone.jpg);
 	}
 }
@@ -319,13 +321,17 @@
 }
 
 .item-back-card {
-	padding: 10px;
+	padding: 15px;
 	border-radius: 24px;
 	color: rgb(165, 42, 42);
 	text-align: center;
-	overflow-y: scroll;
+	overflow: hidden;
 	background-color: rgb(221, 217, 217);
 	transform: rotateY(180deg);
+}
+
+.item-back-card .products-section__menu-item-desc {
+	line-height: 1.2;
 }
 
 .item-face-card,
@@ -340,4 +346,103 @@
 .products-section__menu-item:hover .products-section__menu-item-wrapper,
 .products-section__menu-item:focus .products-section__menu-item-wrapper {
 	transform: rotateY(180deg);
+}
+
+@media screen and (min-width: 768px) {
+	.products-section__label {
+		font-size: 22px;
+	}
+
+	.products-section__title {
+		margin-bottom: 200px;
+		font-size: 34px;
+	}
+
+	.products-section__menu {
+		flex-wrap: nowrap;
+		gap: 16px;
+	}
+
+	.products-section__menu-item {
+		width: 224px;
+		height: 428px;
+		padding-top: 108px;
+		padding-left: 42px;
+		padding-right: 42px;
+		border-radius: 15.78px;
+
+		&:not(:last-child) {
+			margin-bottom: 0;
+		}
+	}
+
+	.products-section__menu-item-title {
+		font-size: 22px;
+		line-height: 1.22;
+	}
+
+	.item-back-card {
+		border-radius: 15.78px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.products-section__label {
+		font-size: 30px;
+		line-height: 1.23;
+	}
+
+	.products-section__title {
+		margin-bottom: 303px;
+		font-size: 36px;
+		line-height: 1.25;
+	}
+
+	.products-section__menu {
+		gap: 29px;
+	}
+
+	.products-section__menu-item {
+		width: 370px;
+		max-width: 370px;
+		height: 535px;
+		padding-top: 166px;
+		padding-left: 60px;
+		padding-right: 60px;
+		border-radius: 24px;
+	}
+
+	.product-1::before,
+	.product-2::before,
+	.product-3::before {
+		width: 300px;
+		height: 300px;
+	}
+
+	.product-1::after,
+	.product-2::after,
+	.product-3::after {
+		width: 300px;
+		height: 300px;
+	}
+
+	.products-section__menu-item-title {
+		font-size: 30px;
+		line-height: 1.23;
+		margin-bottom: 65px;
+	}
+
+	.products-section__menu-item-desc {
+		font-size: 16px;
+		line-height: 1.75;
+	}
+
+	.item-back-card {
+		padding: 20px;
+		border-radius: 24px;
+	}
+
+	.item-back-card .products-section__menu-item-desc {
+		line-height: 1.5;
+	}
 }
