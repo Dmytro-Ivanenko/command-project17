@@ -1,56 +1,37 @@
 :root {
-  --acc-color: #f8d24e;
+	--acc-color: #f8d24e;
 
-  // *** Backgrounds ***
-  --main-bcg: #84a278;
-  --modal-bcg: #ffffff;
-  --card-bcg: #fcfcfc;
+	// *** Backgrounds ***
+	--main-bcg: #84a278;
+	--modal-bcg: #ffffff;
+	--card-bcg: #fcfcfc;
 
-  // Products
-  --cream-bcg: #aec6a5;
-  --coffee-bcg: #efd478;
-  --milk-bcg: #d6936d;
-  --cream-img-bcg: linear-gradient(
-      0deg,
-      rgba(156, 190, 143, 0.7),
-      rgba(156, 190, 143, 0.7)
-    ),
-    #d9d9d9;
-  --coffee-img-bcg: linear-gradient(
-      0deg,
-      rgba(248, 210, 78, 0.7),
-      rgba(248, 210, 78, 0.7)
-    ),
-    #d9d9d9;
-  --milk-img-bcg: linear-gradient(
-      0deg,
-      rgba(213, 117, 63, 0.7),
-      rgba(213, 117, 63, 0.7)
-    ),
-    #d9d9d9;
+	// Products
+	--cream-bcg: #aec6a5;
+	--coffee-bcg: #efd478;
+	--milk-bcg: #d6936d;
+	--cream-img-bcg: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #d9d9d9;
+	--coffee-img-bcg: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #d9d9d9;
+	--milk-img-bcg: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #d9d9d9;
 
-  // How it`s made
-  --cow-bcg: linear-gradient(
-      0deg,
-      rgba(248, 210, 78, 0.7),
-      rgba(248, 210, 78, 0.7)
-    ),
-    #d9d9d9;
+	// How it`s made
+	--cow-bcg: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #d9d9d9;
 
-  // Customer Rewiews
-  --bcg-btn: #d9d9d9;
-  --bcg-btn-hover: #84a178;
-  --cr-border-bottom: 1px solid #e1e1e1;
-  // *** Font`s color ***
-  --first-font-color: #131313;
-  --second-font-color: #000000;
-  --alt-font-color: #fcfcfc;
+	// Customer Rewiews
+	--bcg-btn: #d9d9d9;
+	--bcg-btn-hover: #84a178;
+	--cr-border-bottom: 1px solid #e1e1e1;
+	// *** Font`s color ***
+	--first-font-color: #131313;
+	--second-font-color: #000000;
+	--alt-font-color: #fcfcfc;
 
-  // Contact`s card font`s color
-  --time-font-color: #ababab;
-  --contacts-font-color: #d6936d;
-  --line-color: #e1e1e1;
+	// Contact`s card font`s color
+	--time-font-color: #ababab;
+	--contacts-font-color: #d6936d;
+	--line-color: #e1e1e1;
 
-  // Other
-  --bottom-font-color: #7a7a7a; //Напис під футером
+	// Other
+	--bottom-font-color: #7a7a7a; //Напис під футером
+	--active-button: #0a8817;
 }
