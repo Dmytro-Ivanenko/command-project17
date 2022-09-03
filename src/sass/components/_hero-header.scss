@@ -1,91 +1,87 @@
-*{
-    outline: violet solid 1px;
+* {
+	outline: violet solid 1px;
 }
 
 // Header
 
-.hero-header{
-background-color: var(--main-bcg);
-    color: var(--alt-font-color);
-    .button-header{
-        display: none;
-        min-width: 125px;
-        height: 42px;
-
-    }
-}
-.header{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 20px;
+.hero-header {
+	background-color: var(--main-bcg);
+	color: var(--alt-font-color);
+	.button-header {
+		display: none;
+		min-width: 125px;
+		height: 42px;
+	}
 }
 
-.nav__list{
-    display: none;
+.header {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 12px;
 }
 
-
-.burger-button__svg{
-    stroke:var(--modal-bcg);
-}
-.button-header__svg{
-   
-
+.nav__list {
+	display: none;
 }
 
+.nav__link {
+	font-family: inherit;
+	color: var(--alt-font-color);
+	text-decoration: none;
+	font-weight: 700;
 
+	@include font-line(16px, 20px);
+}
+
+.header__button-box {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+}
+
+.burger-button__svg {
+	stroke: var(--modal-bcg);
+}
+.button-header__svg {
+}
 
 // header tablet
 @media screen and (min-width: 768px) {
+	.hero-header {
+		background-color: var(--main-bcg);
+		color: var(--alt-font-color);
 
-    .hero-header {
-            background-color: var(--main-bcg);
-            color: var(--alt-font-color);
-    
-            .button-header {
-                display: flex;
-            }
-        }
-
-        .header__button-box{
-            display: flex;
-            align-items: center;
-            gap: 30px;
-        }
+		.button-header {
+			display: flex;
+		}
+	}
 }
-
 
 // header desktop
 @media screen and (min-width: 1200px) {
-.header__nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-.nav__list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 27px;
+	.header__nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.nav__list {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 27px;
+
+		margin-left: 268px;
+	}
+
+	.burger-button {
+		display: none;
+	}
 }
-
-
-
-    .burger-button{
-        display: none;
-    }
-}
-
-
-
-
-
 
 // @media screen and ()
 
-
 // Burger menu
-.burger-menu__close-icon{
-    stroke:#fff;
-    fill: #fff;
+.burger-menu__close-icon {
+	stroke: var(--alt-font-color);
+	fill: var(--alt-font-color);
 }
