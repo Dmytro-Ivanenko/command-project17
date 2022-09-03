@@ -1,76 +1,169 @@
 <div class="hero-header">
-  <header class="header">
-    <div class="container">
-      <nav class="header__nav">
-        <svg class="header__logo"></svg>
+	<div class="container">
+		<header class="header">
+			<nav class="header__nav">
+				<a href="./index.html" class="header__logo-link">
+					<picture class="logo-picture">
+						<source
+							srcset="./images/logo/logo-41.png 41w, ./images/logo/logo-41@2x.png 82w"
+							media="(max-width: 767px)"
+							sizes="41px"
+							type="image/png"
+						/>
+						<source />
 
-        <ul class="nav__list">
-          <li class="nav__list-item">
-            <a class="nav__link" href="#home">Home</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="nav__link" href="#about">About us</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="nav__link" href="#how-it-made">How it’s made?</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="nav__link" href="#products">Our products</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="nav__link" href="#contact">Contact</a>
-          </li>
-        </ul>
+						<source
+							srcset="./images/logo/logo-60.png 60w, ./images/logo/logo-60@2x.png 120w"
+							media="(min-width: 1200px)"
+							sizes="60px"
+							type="image/png"
+						/>
+						<source />
 
-        <button class="hero__button-by-now" type="button">
-          Buy now
-          <svg class="button-by-now__icon"></svg>
-        </button>
-      </nav>
-    </div>
-  </header>
+						<source
+							srcset="./images/logo/logo-48.png 48w, ./images/logo/logo-48@2x.png 86w"
+							media="(min-width: 768px)"
+							sizes="48px"
+							type="image/png"
+						/>
+						<source />
 
-  <section class="hero">
-    <div class="container">
-      <div>
-        <h1 class="hero__title">ice cream made with passion</h1>
+						<img src="./images/logo/logo-60.png" alt="logotype" />
+					</picture>
+				</a>
 
-        <ul class="hero__link-list">
-          <li class="hero__link-list-item">
-            <a class="hero__link" href="">Products</a>
-          </li>
-          <li class="hero__link-list-item">
-            <a class="hero__link" href="">How it’s made?</a>
-          </li>
-        </ul>
+				<ul class="nav__list">
+					<li class="nav__list-item">
+						<a class="nav__link" href="#home">Home</a>
+					</li>
+					<li class="nav__list-item">
+						<a class="nav__link" href="#about">About us</a>
+					</li>
+					<li class="nav__list-item">
+						<a class="nav__link" href="#how-it-made">How it’s made?</a>
+					</li>
+					<li class="nav__list-item">
+						<a class="nav__link" href="#products">Our products</a>
+					</li>
+					<li class="nav__list-item">
+						<a class="nav__link" href="#contact">Contact</a>
+					</li>
+				</ul>
+			</nav>
 
-        <div class="hero__description-box">
-          <div class="hero__description-sub-box">
-            <p class="hero__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Dignissimos quos exercitationem illo molestiae distinctio itaque
-              voluptatem ab consectetur, modi autem?
-            </p>
-            <button class="arrow">
-              <svg class="arrow__icon"></svg>
-            </button>
-          </div>
-        </div>
-      </div>
+			<div class="header__button-box">
+				<button type="button" class="burger-button">
+					<svg class="burger-button__svg" width="20" height="12">
+						<use href="./images/icons/icons.svg#icon-burger-menu"></use>
+					</svg>
+				</button>
 
-      <div class="trading-points">
-        <p class="trading-points__count">16</p>
-        <p class="trading-points__type">cafes</p>
-        <p class="trading-points__count">23</p>
-        <p class="trading-points__type">food trucks</p>
-      </div>
+				<button type="button" class="button-header">
+					Buy now
+					<svg class="button-header__svg" width="6" height="10">
+						<use href="./images/icons/icons.svg#icon-button-greather"></use>
+					</svg>
+				</button>
+			</div>
+		</header>
+	</div>
 
-      <img
-        class="hero__happy-ice-cream"
-        src="./images/header-hero/test.jpg"
-        alt="ice-cream"
-      />
-    </div>
-  </section>
+	<!-- Burger menu -->
+	<div class="burger-menu">
+		<a href="./index.html" class="header__logo-link">
+			<picture class="logo-picture">
+				<source
+					srcset="./images/logo/logo-41.png 41w, ./images/logo/logo-41@2x.png 82w"
+					media="(max-width: 767px)"
+					sizes="41px"
+					type="image/png"
+				/>
+				<source />
+
+				<source
+					srcset="./images/logo/logo-60.png 60w, ./images/logo/logo-60@2x.png 120w"
+					media="(min-width: 1200px)"
+					sizes="60px"
+					type="image/png"
+				/>
+				<source />
+
+				<source
+					srcset="./images/logo/logo-48.png 48w, ./images/logo/logo-48@2x.png 86w"
+					media="(min-width: 768px)"
+					sizes="48px"
+					type="image/png"
+				/>
+				<source />
+
+				<img src="./images/logo/logo-60.png" alt="logotype" />
+			</picture>
+		</a>
+
+		<ul class="bureger-nav__list">
+			<li class="burger-nav__list-item">
+				<a class="burger-nav__link" href="#home">Home</a>
+			</li>
+			<li class="burger-nav__list-item">
+				<a class="burger-nav__link" href="#about">About us</a>
+			</li>
+			<li class="burger-nav__list-item">
+				<a class="burger-nav__link" href="#how-it-made">How it’s made?</a>
+			</li>
+			<li class="burger-nav__list-item">
+				<a class="burger-nav__link" href="#products">Our products</a>
+			</li>
+			<li class="burger-nav__list-item">
+				<a class="burger-nav__link" href="#contact">Contact</a>
+			</li>
+		</ul>
+
+		<button class="burger-menu__close-button">
+			<svg class="burger-menu__close-icon" width="32" height="32">
+				<use href="./images/icons/icons.svg#icon-close"></use>
+			</svg>
+		</button>
+	</div>
+
+	<!-- HERO -->
+	<section class="hero">
+		<div class="container">
+			<div>
+				<h1 class="hero__title">ice cream made with passion</h1>
+
+				<ul class="hero__link-list">
+					<li class="hero__link-list-item">
+						<a class="hero__link" href="">Products</a>
+					</li>
+					<li class="hero__link-list-item">
+						<a class="hero__link" href="">How it’s made?</a>
+					</li>
+				</ul>
+
+				<div class="hero__description-box">
+					<div class="hero__description-sub-box">
+						<p class="hero__description">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, Lorem ipsum dolor sit, amet consectetur
+							adipisicing elit. Dignissimos quos exercitationem illo molestiae distinctio itaque voluptatem ab
+							consectetur, modi autem?
+						</p>
+						<button class="arrow">
+							<svg class="arrow__icon">
+								<use href=" "></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="trading-points">
+				<p class="trading-points__count">16</p>
+				<p class="trading-points__type">cafes</p>
+				<p class="trading-points__count">23</p>
+				<p class="trading-points__type">food trucks</p>
+			</div>
+
+			<img class="hero__happy-ice-cream" src="./images/header-hero/test.jpg" alt="ice-cream" />
+		</div>
+	</section>
 </div>
