@@ -58,6 +58,7 @@
 
 .button-locations {
   // font-family: Montserrat;
+  width: 164px;
   text-align: center;
   background: var(--acc-color);
   border-radius: 10px;
@@ -73,6 +74,16 @@
   &:focus {
     background-color: #0a8817;
   }
+    @media screen and (max-width:767px) {
+      margin-bottom: 16px;
+    }
+    @media screen and (min-width:768px) {
+      width: 196px;
+      margin-right: 16px;
+    }
+    @media screen and (min-width:1200px) {
+      margin-right: 24px;
+    }
 }
 
 .button-contacts__svg {
@@ -82,9 +93,10 @@
 
 .button-franchise {
   // font-family: Montserrat;
+  width: 164px;
   text-align: center;
   border: 2px solid #f8d24e;
-  color: #fcfcfc;
+  color: var(--first-font-color);
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -96,6 +108,9 @@
   &:hover,
   &:focus {
     border-color: #0a8817;
+  }
+  @media screen and (min-width:768px) {
+    width: 196px;
   }
 }
 
