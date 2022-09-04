@@ -113,13 +113,13 @@
 	width: 200px;
 	height: 200px;
 	border-radius: 50%;
-	background-size: contain;
+	background-size: cover;
 
 	position: absolute;
 	z-index: 100;
 	top: 0;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, -65%);
 }
 
 .product-1::before {
@@ -255,7 +255,7 @@
 	z-index: 99;
 	top: 0;
 	left: 50%;
-	transform: translate(-50%, -45%);
+	transform: translate(-50%, -60%);
 }
 
 .product-1::after {
@@ -367,8 +367,8 @@
 		width: 224px;
 		height: 428px;
 		padding-top: 108px;
-		padding-left: 42px;
-		padding-right: 42px;
+		padding-left: 39px;
+		padding-right: 39px;
 		border-radius: 15.78px;
 
 		&:not(:last-child) {
@@ -409,6 +409,7 @@
 		padding-top: 166px;
 		padding-left: 60px;
 		padding-right: 60px;
+		padding-bottom: 55px;
 		border-radius: 24px;
 	}
 
