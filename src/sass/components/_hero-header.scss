@@ -284,7 +284,8 @@
 
 	@extend %animation;
 
-	animation: happy-ice-cream 1200ms linear 700ms forwards, ice-cream-rotate 5000ms linear 2200ms infinite alternate;
+	animation: happy-ice-cream 1200ms linear 700ms forwards,
+		happy-ice-cream-translate 5000ms linear 2200ms infinite alternate;
 }
 
 .hero__happy-ice-cream {
@@ -301,6 +302,8 @@
 
 	top: 47.11px;
 	left: 25.29px;
+
+	animation: face1 10s cubic-bezier(1, -0.01, 0.59, -0.15) 2400ms infinite alternate;
 }
 
 .faces--face2 {
@@ -309,6 +312,7 @@
 
 	top: 3px;
 	right: 6px;
+	animation: face2 20s cubic-bezier(1, 0, 0, 0.91) 10s infinite alternate;
 }
 
 .faces--face3 {
@@ -407,6 +411,8 @@
 
 	.ice-cream-circle {
 		margin-right: 33px;
+
+		animation: rotate-circle 30s infinite linear;
 	}
 
 	.arrow-link {
@@ -552,5 +558,26 @@
 
 	.trading-points__type {
 		@include font-line(14px, 17px);
+	}
+
+	.faces--face1 {
+		width: 175.95px;
+		height: 180px;
+		top: 127.11px;
+		left: 78.29px;
+	}
+
+	.faces--face2 {
+		width: 219.95px;
+		height: 214px;
+		top: 15px;
+		right: 22px;
+	}
+
+	.faces--face3 {
+		width: 219.95px;
+		height: 214px;
+		top: 209px;
+		right: -2px;
 	}
 }
