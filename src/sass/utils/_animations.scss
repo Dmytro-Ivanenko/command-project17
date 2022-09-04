@@ -4,3 +4,22 @@
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+@keyframes happy-ice-cream {
+	0% {
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
+
+@keyframes ice-cream-rotate {
+	0% {
+	}
+
+	100% {
+		transform: rotateZ(-15deg);
+	}
+}
