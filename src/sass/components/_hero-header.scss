@@ -275,23 +275,16 @@
 // Happy Ice-cream
 
 .happy-ice-cream-box {
-	display: flex;
-	justify-content: center;
-
 	opacity: 0;
 	transform: translateY(100%);
 
 	position: absolute;
 	bottom: 0px;
 	left: 27%;
-	overflow: visible;
 
 	@extend %animation;
 
 	animation: happy-ice-cream 1200ms linear 700ms forwards, ice-cream-rotate 5000ms linear 2200ms infinite alternate;
-}
-
-.happy-ice-cream__img {
 }
 
 .hero__happy-ice-cream {
@@ -327,9 +320,9 @@
 }
 
 @media screen and(min-width:768px) {
-	.happy-ice-cream-box {
-		display: none;
-	}
+	// .happy-ice-cream-box {
+
+	// }
 }
 
 // HERO mobile
@@ -461,6 +454,31 @@
 		@include font-line(8px, 10px);
 		text-align: right;
 	}
+
+	.happy-ice-cream-box {
+		left: 53%;
+	}
+
+	.faces--face1 {
+		width: 109.95px;
+		height: 106px;
+		top: 80.11px;
+		left: 45.29px;
+	}
+
+	.faces--face2 {
+		width: 139.57px;
+		height: 138.18px;
+		top: 1px;
+		right: 11px;
+	}
+
+	.faces--face3 {
+		width: 138.55px;
+		height: 141.22px;
+		top: 125px;
+		right: -2px;
+	}
 }
 
 // HERO desktop
@@ -492,6 +510,7 @@
 	}
 
 	.hero__link-list {
+		margin-bottom: 42px;
 		gap: 34px;
 	}
 
