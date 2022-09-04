@@ -321,6 +321,9 @@
 }
 
 .item-back-card {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	padding: 15px;
 	border-radius: 24px;
 	color: rgb(165, 42, 42);
