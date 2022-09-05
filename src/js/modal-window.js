@@ -1,14 +1,11 @@
-(() => {
-  const refs = {
-    openModalBtn: document.querySelector("[data-modal-open]"),
-    closeModalBtn: document.querySelector("[data-modal-close]"),
-    modal: document.querySelector("[data-modal]"),
-  };
+$(document).on("click", '[data-toggle="modal"]', function () {
+	var target = $(this).attr("data-target");
+	console.log(target);
+	$(target).addClass("show");
+	return false;
+});
 
-  refs.openModalBtn.addEventListener("click", toggleModal);
-  refs.closeModalBtn.addEventListener("click", toggleModal);
-
-  function toggleModal() {
-    refs.modal.classList.toggle("is-hidden");
-  }
-})();
+$(".modal .close").on("click", function () {
+	$(this).closest(".modal").removeClass("show");
+	return false;
+});
