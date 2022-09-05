@@ -1,1 +1,204 @@
-<div class="hero">Тут буде Header by Dmytro Ivanenko</div>
+<div class="hero-header">
+    <div class="container">
+        <header class="header">
+            <nav class="header__nav">
+                <a href="./index.html" class="header__logo-link">
+                    <picture class="logo-picture">
+                        <source srcset="./images/logo/logo-41.png 41w, ./images/logo/logo-41@2x.png 82w"
+                            media="(max-width: 767px)" sizes="41px" type="image/png" />
+                        <source />
+
+                        <source srcset="./images/logo/logo-60.png 60w, ./images/logo/logo-60@2x.png 120w"
+                            media="(min-width: 1200px)" sizes="60px" type="image/png" />
+                        <source />
+
+                        <source srcset="./images/logo/logo-48.png 48w, ./images/logo/logo-48@2x.png 86w"
+                            media="(min-width: 768px)" sizes="48px" type="image/png" />
+                        <source />
+
+                        <img src="./images/logo/logo-60.png" alt="logotype" />
+                    </picture>
+                </a>
+
+                <ul class="nav__list">
+                    <li class="nav__list-item">
+                        <a class="nav__link" href="#home">Home</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a class="nav__link" href="#about">About us</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a class="nav__link" href="#how-it-made">How it’s made?</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a class="nav__link" href="#products">Our products</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a class="nav__link" href="#contacts">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="header__button-box">
+                <button type="button" class="burger-button js-open-menu">
+                    <svg class="burger-button__svg" width="20" height="12">
+                        <use href="./images/icons/icons.svg#icon-burger-menu"></use>
+                    </svg>
+                </button>
+
+                <button type="button" class="button-header">
+                    Buy now
+                    <svg class="button-header__svg" width="6" height="10">
+                        <use href="./images/icons/icons.svg#icon-button-greather"></use>
+                    </svg>
+                </button>
+            </div>
+        </header>
+    </div>
+
+    <!-- Burger menu -->
+    <div class="burger-menu js-menu-container">
+
+        <div class="container">
+
+            <div class="header-mobil-menu">
+                <a href="./index.html" class="header__logo-link">
+                    <picture class="logo-picture">
+                        <source srcset="./images/logo/logo-41.png 41w, ./images/logo/logo-41@2x.png 82w"
+                            media="(max-width: 767px)" sizes="41px" type="image/png" />
+                        <source />
+
+                        <source srcset="./images/logo/logo-60.png 60w, ./images/logo/logo-60@2x.png 120w"
+                            media="(min-width: 1200px)" sizes="60px" type="image/png" />
+                        <source />
+
+                        <source srcset="./images/logo/logo-48.png 48w, ./images/logo/logo-48@2x.png 86w"
+                            media="(min-width: 768px)" sizes="48px" type="image/png" />
+                        <source />
+
+                        <img src="./images/logo/logo-60.png" alt="logotype" />
+                    </picture>
+                </a>
+
+                <button class="burger-menu__close-button js-close-menu">
+                    <svg class="burger-menu__close-icon" width="32" height="32">
+                        <use href="./images/icons/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+            </div>
+
+            <ul class="burger-nav__list">
+                <li class="burger-nav__list-item">
+                    <a class="burger-nav__link js-closeByHome" href="#home">Home</a>
+                </li>
+                <li class="burger-nav__list-item js-closeByAboutAs">
+                    <a class="burger-nav__link" href="#about">About us</a>
+                </li>
+                <li class="burger-nav__list-item js-closeByHowItMade">
+                    <a class="burger-nav__link" href="#how-it-made">How it’s made?</a>
+                </li>
+                <li class="burger-nav__list-item js-closeByProducts">
+                    <a class="burger-nav__link" href="#products">Our products</a>
+                </li>
+                <li class="burger-nav__list-item js-closeByContact">
+                    <a class="burger-nav__link" href="#contacts">Contact</a>
+                </li>
+            </ul>
+
+
+        </div>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container">
+            <div>
+                <h1 class="hero__title">ice cream made with passion</h1>
+
+                <ul class="hero__link-list">
+                    <li class="hero__link-list-item hero__link-list-item--products">
+                        <a class="hero__link hero__link--products " href="#products">Products</a>
+                    </li>
+                    <li class="hero__link-list-item hero__link-list-item--how-its-made">
+                        <a class="hero__link hero__link--how-its-made" href="#how-it-made">How it’s made?</a>
+                    </li>
+                </ul>
+
+                <div class="hero__description-box">
+                    <picture class="ice-cream-circle">
+
+                        <source
+                            srcset="./images/header-hero/icecreams-225.png 225w, ./images/header-hero/icecreams-225@2x.png 450w"
+                            media="(min-width: 1200px)" sizes="225px" type="image/png" />
+                        <source />
+
+                        <source
+                            srcset="./images/header-hero/icecreams-152.png 152w, ./images/header-hero/icecreams-152@2x.png 304w"
+                            media="(min-width: 768px)" sizes="152px" type="image/png" />
+                        <source />
+
+                        <img src="./images/header-hero/icecreams-225.png" alt="ice-creams" />
+
+                    </picture>
+                    <div class="hero__description-sub-box">
+                        <p class="hero__description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et
+                        </p>
+                        <a class="arrow-link" href="#about">
+
+                            <svg class="arrow__icon">
+                                <use href="./images/icons/icons.svg#icon-arrow "></use>
+                            </svg>
+                        </a>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="trading-points">
+                <p class="trading-points__count">16</p>
+                <p class="trading-points__type">cafes</p>
+                <p class="trading-points__count">23</p>
+                <p class="trading-points__type">food trucks</p>
+            </div>
+
+            <div class="happy-ice-cream-box">
+                <picture class="happy-ice-cream__img">
+                    <source
+                        srcset="./images/header-hero/icecream-157.png 157w, ./images/header-hero/icecream-157@2x.png 314w"
+                        media="(max-width: 767px)" sizes="157px" type="image/png" />
+                    <source />
+
+                    <source
+                        srcset="./images/header-hero/icecream-447.png 447w, ./images/header-hero/icecream-447@2x.png 894w"
+                        media="(min-width: 1200px)" sizes="447px" type="image/png" />
+                    <source />
+
+                    <source
+                        srcset="./images/header-hero/icecream-250.png 250w, ./images/header-hero/icecream-250@2x.png 500w"
+                        media="(min-width: 768px)" sizes="270px" type="image/png" />
+                    <source />
+
+
+
+
+                    <img class="hero__happy-ice-cream" src="./images/header-hero/icecream-157.png" alt="ice-cream" />
+                </picture>
+
+                <svg class="faces faces--face1 ">
+                    <use href="./images/icons/icons.svg#icon-hero-ice-cream-face1"></use>
+                </svg>
+
+                <svg class="faces faces--face2">
+                    <use href="./images/icons/icons.svg#icon-hero-ice-cream-face2"></use>
+                </svg>
+
+                <svg class="faces faces--face3">
+                    <use href="./images/icons/icons.svg#icon-hero-ice-cream-face3"></use>
+                </svg>
+            </div>
+        </div>
+    </section>
+</div>
