@@ -1,50 +1,36 @@
 <div class="container modal-window-container">
-	<div class="modal__wrapper">
-		<p class="modal__name">Buy now</p>
-		<ul class="modal__list">
-			<li class="modal__item-prod-1 prod-1">
-				<div class="modal__card-wrapper">
-					<p class="modal__card-label">Ice cream</p>
-				</div>
-			</li>
-			<li class="modal__item-prod-2 prod-2">
-				<div class="modal__card-wrapper">
-					<p class="modal__card-label">Ice coffe</p>
-				</div>
-			</li>
-			<li class="modal__item-prod-3 prod-3">
-				<div class="modal__card-wrapper">
-					<p class="modal__card-label">Milkshake</p>
-				</div>
-			</li>
-		</ul>
-	</div>
-	<form class="modal-form">
-		<label class="modal-form__field">
-			<input
-				type="text"
-				name="user-name"
-				placeholder="Name"
-				class="modal-form__input"
-				required
-				minlength="2"
-				pattern="[a-zA-Zа-яА-ЯіІїЇ]+"
-			/>
-		</label>
-		<label class="modal-form__field">
-			<input
-				type="tel"
-				name="user-phone"
-				placeholder="Phone"
-				class="modal-form__input"
-				required
-				pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-				title="xxx-xxx-xx-xx"
-			/>
-		</label>
-		<label class="modal-form__field-user-msg">
-			<textarea name="user-message" class="modal-form__message" placeholder="Comment"></textarea>
-		</label>
-		<button class="button-modal" type="submit">Submit</button>
-	</form>
+  <div class="modal__wrapper">
+    <p class="modal__name">Buy now</p>
+    <ul class="modal__list">
+      <li class="modal__item-prod-1 prod-1">
+        <div class="modal__card-wrapper">
+          <p class="modal__card-label">Ice cream</p>
+        </div>
+      </li>
+      <li class="modal__item-prod-2 prod-2">
+        <div class="modal__card-wrapper">
+          <p class="modal__card-label">Ice coffe</p>
+        </div>
+      </li>
+      <li class="modal__item-prod-3 prod-3">
+        <div class="modal__card-wrapper">
+          <p class="modal__card-label">Milkshake</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <form class="modal-form">
+    <label class="modal-form__field">
+      <input type="text" name="user-name" placeholder="Name" class="modal-form__input" required minlength="2"
+        pattern="[a-zA-Zа-яА-ЯіІїЇ]+" />
+    </label>
+    <label class="modal-form__field">
+      <input type="tel" name="user-phone" placeholder="Phone" class="modal-form__input" required
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx" />
+    </label>
+    <label class="modal-form__field-user-msg">
+      <textarea name="user-message" class="modal-form__message" placeholder="Comment"></textarea>
+    </label>
+    <button class="button-modal" type="submit">Submit</button>
+  </form>
 </div>

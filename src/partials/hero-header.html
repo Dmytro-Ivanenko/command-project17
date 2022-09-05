@@ -116,28 +116,43 @@
                 <h1 class="hero__title">ice cream made with passion</h1>
 
                 <ul class="hero__link-list">
-                    <li class="hero__link-list-item">
-                        <a class="hero__link" href="">Products</a>
+                    <li class="hero__link-list-item hero__link-list-item--products">
+                        <a class="hero__link hero__link--products " href="#products">Products</a>
                     </li>
-                    <li class="hero__link-list-item">
-                        <a class="hero__link" href="">How it’s made?</a>
+                    <li class="hero__link-list-item hero__link-list-item--how-its-made">
+                        <a class="hero__link hero__link--how-its-made" href="#how-it-made">How it’s made?</a>
                     </li>
                 </ul>
 
                 <div class="hero__description-box">
+                    <picture class="ice-cream-circle">
+
+                        <source
+                            srcset="./images/header-hero/icecreams-225.png 225w, ./images/header-hero/icecreams-225@2x.png 450w"
+                            media="(min-width: 1200px)" sizes="225px" type="image/png" />
+                        <source />
+
+                        <source
+                            srcset="./images/header-hero/icecreams-152.png 152w, ./images/header-hero/icecreams-152@2x.png 304w"
+                            media="(min-width: 768px)" sizes="152px" type="image/png" />
+                        <source />
+
+                        <img src="./images/header-hero/icecreams-225.png" alt="ice-creams" />
+
+                    </picture>
                     <div class="hero__description-sub-box">
                         <p class="hero__description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, Lorem ipsum dolor sit, amet
-                            consectetur
-                            adipisicing elit. Dignissimos quos exercitationem illo molestiae distinctio itaque
-                            voluptatem ab
-                            consectetur, modi autem?
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et
                         </p>
-                        <button class="arrow">
+                        <a class="arrow-link" href="#about">
+
                             <svg class="arrow__icon">
-                                <use href=" "></use>
+                                <use href="./images/icons/icons.svg#icon-arrow "></use>
                             </svg>
-                        </button>
+                        </a>
+
+
                     </div>
                 </div>
             </div>
@@ -149,7 +164,41 @@
                 <p class="trading-points__type">food trucks</p>
             </div>
 
-            <img class="hero__happy-ice-cream" src="./images/header-hero/test.jpg" alt="ice-cream" />
+            <div class="happy-ice-cream-box">
+                <picture class="happy-ice-cream__img">
+                    <source
+                        srcset="./images/header-hero/icecream-157.png 157w, ./images/header-hero/icecream-157@2x.png 314w"
+                        media="(max-width: 767px)" sizes="157px" type="image/png" />
+                    <source />
+
+                    <source
+                        srcset="./images/header-hero/icecream-447.png 447w, ./images/header-hero/icecream-447@2x.png 894w"
+                        media="(min-width: 1200px)" sizes="447px" type="image/png" />
+                    <source />
+
+                    <source
+                        srcset="./images/header-hero/icecream-250.png 250w, ./images/header-hero/icecream-250@2x.png 500w"
+                        media="(min-width: 768px)" sizes="270px" type="image/png" />
+                    <source />
+
+
+
+
+                    <img class="hero__happy-ice-cream" src="./images/header-hero/icecream-157.png" alt="ice-cream" />
+                </picture>
+
+                <svg class="faces faces--face1 ">
+                    <use href="./images/icons/icons.svg#icon-hero-ice-cream-face1"></use>
+                </svg>
+
+                <svg class="faces faces--face2">
+                    <use href="./images/icons/icons.svg#icon-hero-ice-cream-face2"></use>
+                </svg>
+
+                <svg class="faces faces--face3">
+                    <use href="./images/icons/icons.svg#icon-hero-ice-cream-face3"></use>
+                </svg>
+            </div>
         </div>
     </section>
 </div>

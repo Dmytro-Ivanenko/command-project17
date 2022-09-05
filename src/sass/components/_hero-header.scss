@@ -68,8 +68,6 @@
 
 	@extend %animation;
 }
-.button-header__svg {
-}
 
 // header tablet
 @media screen and (min-width: 768px) {
@@ -194,5 +192,406 @@
 @media screen and (min-width: 768px) {
 	.burger-nav__link {
 		@include font-line(48px, 58.5px);
+	}
+}
+
+// +++    HERO    +++
+
+.hero {
+	position: relative;
+	padding-top: 60px;
+
+	height: 452px;
+	overflow-y: hidden;
+}
+
+.hero__title {
+	margin-bottom: 32px;
+
+	font-family: "Seymour One";
+	font-style: normal;
+	font-weight: 400;
+	@include font-line(26px, 33px);
+
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+}
+
+.hero__link-list {
+	display: flex;
+	gap: 18px;
+}
+
+.hero__link-list-item--products {
+	width: 62px;
+	height: 24px;
+
+	font-weight: 600;
+
+	font-size: 8px;
+
+	text-align: center;
+}
+
+.hero__link--products {
+	display: inline-block;
+	width: 100%;
+
+	border: 2px solid var(--acc-color);
+	border-radius: 8px;
+
+	color: var(--second-font-color);
+	text-decoration: none;
+
+	line-height: 20px;
+	vertical-align: middle;
+
+	&:focus,
+	&:hover {
+		border-color: var(--active-button);
+		color: var(--alt-font-color);
+	}
+	box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+
+	@extend %animation;
+}
+
+.hero__link-list-item--how-its-made {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.hero__link--how-its-made {
+	@include font-line(8px, 10px);
+	color: var(--acc-color);
+
+	&:focus,
+	&:hover {
+		color: var(--alt-font-color);
+	}
+	@extend %animation;
+}
+
+// Happy Ice-cream
+
+.happy-ice-cream-box {
+	opacity: 0;
+	transform: translateY(100%);
+
+	position: absolute;
+	bottom: 0px;
+	left: 27%;
+
+	@extend %animation;
+
+	animation: happy-ice-cream 1200ms linear 700ms forwards,
+		happy-ice-cream-translate 5000ms linear 2200ms infinite alternate;
+}
+
+.hero__happy-ice-cream {
+	display: block;
+}
+
+.faces {
+	position: absolute;
+}
+
+.faces--face1 {
+	width: 68.95px;
+	height: 62.4px;
+
+	top: 47.11px;
+	left: 25.29px;
+
+	animation: face1 10s cubic-bezier(1, -0.01, 0.59, -0.15) 2400ms infinite alternate;
+}
+
+.faces--face2 {
+	width: 77.57px;
+	height: 76.18px;
+
+	top: 3px;
+	right: 6px;
+	animation: face2 20s cubic-bezier(1, 0, 0, 0.91) 10s infinite alternate;
+}
+
+.faces--face3 {
+	width: 77.55px;
+	height: 76.22px;
+
+	top: 75px;
+	right: -4px;
+}
+
+@media screen and(min-width:768px) {
+	// .happy-ice-cream-box {
+
+	// }
+}
+
+// HERO mobile
+@media screen and (max-width: 767px) {
+	.hero {
+		background-image: url(../images/header-hero/dottes-319.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: right bottom;
+	}
+
+	@media (min-device-pixel-ratio: 2),
+		(-webkit-min-device-pixel-ratio: 2),
+		(min-resolution: 192dpi),
+		(min-resolution: 2dppx) {
+		.hero {
+			background-image: url(../images/header-hero/dottes-319@2x.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: right bottom;
+		}
+	}
+
+	.trading-points,
+	.hero__description-box {
+		display: none;
+	}
+
+	.hero__title {
+		max-width: 247px;
+	}
+
+	.faces--face1 {
+		animation: face1-mobile 4s cubic-bezier(1, -0.01, 0.59, -0.15) 2400ms infinite alternate;
+	}
+
+	.faces--face2 {
+		animation: face2-mobile 17s cubic-bezier(1, 0, 0, 0.91) 10s infinite alternate;
+	}
+}
+
+// HERO tablet
+@media screen and (min-width: 768px) {
+	.hero {
+		.container {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		background-image: url(../images/header-hero/dottes-768.png);
+		height: 350px;
+		padding-top: 40px;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: right bottom;
+	}
+
+	@media (min-device-pixel-ratio: 2),
+		(-webkit-min-device-pixel-ratio: 2),
+		(min-resolution: 192dpi),
+		(min-resolution: 2dppx) {
+		.hero {
+			background-image: url(../images/header-hero/dottes-768@2x.png);
+		}
+	}
+
+	.hero__title {
+		margin-bottom: 20px;
+
+		width: 181px;
+		height: 74px;
+
+		@include font-line(18px, 23px);
+	}
+
+	.hero__link-list {
+		margin-bottom: 28px;
+	}
+
+	.hero__description-box {
+		display: flex;
+
+		font-size: 12px;
+		line-height: 1.4;
+	}
+
+	.hero__description-sub-box {
+		padding-top: 25px;
+	}
+
+	.ice-cream-circle {
+		margin-right: 33px;
+
+		animation: rotate-circle 30s infinite linear;
+	}
+
+	.arrow-link {
+		&:hover {
+			.arrow__icon {
+				width: 50px;
+			}
+		}
+		&:focus {
+			.arrow__icon {
+				stroke: 3px;
+			}
+		}
+	}
+
+	.arrow__icon {
+		width: 40px;
+		height: 15px;
+
+		fill: var(--alt-font-color);
+	}
+
+	.hero__description {
+		width: 151px;
+		margin-bottom: 20px;
+
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 140%;
+		color: var(--modal-bcg);
+	}
+
+	.trading-points__count {
+		border-bottom: 4px;
+
+		font-weight: 900;
+		@include font-line(28px, 34px);
+		color: var(--second-font-color);
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+		text-align: right;
+	}
+
+	.trading-points__type {
+		@include font-line(8px, 10px);
+		text-align: right;
+	}
+
+	.happy-ice-cream-box {
+		left: 53%;
+	}
+
+	.faces--face1 {
+		width: 109.95px;
+		height: 106px;
+		top: 80.11px;
+		left: 45.29px;
+
+		animation: face1-tablet 10s cubic-bezier(1, -0.01, 0.59, -0.15) 2400ms infinite alternate;
+	}
+
+	.faces--face2 {
+		width: 139.57px;
+		height: 138.18px;
+		top: 1px;
+		right: 11px;
+
+		animation: face2-tablet 20s cubic-bezier(1, 0, 0, 0.91) 10s infinite alternate;
+	}
+
+	.faces--face3 {
+		width: 138.55px;
+		height: 141.22px;
+		top: 125px;
+		right: -2px;
+	}
+}
+
+// HERO desktop
+@media screen and (min-width: 1200px) {
+	.hero {
+		background-image: url(../images/header-hero/dottes-1199.png);
+		height: 591px;
+
+		background-size: 1200px;
+		background-position: bottom center;
+	}
+
+	@media (min-device-pixel-ratio: 2),
+		(-webkit-min-device-pixel-ratio: 2),
+		(min-resolution: 192dpi),
+		(min-resolution: 2dppx) {
+		.hero {
+			background-image: url(../images/header-hero/dottes-1199@2x.png);
+		}
+	}
+
+	.hero__title {
+		margin-bottom: 28px;
+
+		width: 367px;
+		height: 144px;
+
+		@include font-line(38px, 47.76px);
+	}
+
+	.hero__link-list {
+		margin-bottom: 42px;
+		gap: 34px;
+	}
+
+	.hero__link-list-item--products {
+		width: 134px;
+		height: 42px;
+	}
+
+	.hero__link--products {
+		line-height: 38px;
+
+		font-size: 14px;
+	}
+
+	.hero__link--how-its-made {
+		font-weight: 600;
+		@include font-line(14px, 17px);
+	}
+
+	.ice-cream-circle {
+		margin-right: 14px;
+	}
+
+	.hero__description {
+		width: 200px;
+		margin-bottom: 32px;
+
+		font-size: 14px;
+	}
+
+	.hero__description-sub-box {
+		padding-top: 70px;
+	}
+
+	.trading-points__count {
+		@include font-line(46px, 56px);
+		color: var(--first-font-color);
+	}
+
+	.trading-points__type {
+		@include font-line(14px, 17px);
+	}
+
+	.faces--face1 {
+		width: 175.95px;
+		height: 180px;
+		top: 127.11px;
+		left: 78.29px;
+		animation: face1-tablet 10s cubic-bezier(1, -0.01, 0.59, -0.15) 2400ms infinite alternate;
+	}
+
+	.faces--face2 {
+		width: 219.95px;
+		height: 214px;
+		top: 15px;
+		right: 22px;
+		animation: face2 20s cubic-bezier(1, 0, 0, 0.91) 10s infinite alternate;
+	}
+
+	.faces--face3 {
+		width: 219.95px;
+		height: 214px;
+		top: 209px;
+		right: -2px;
 	}
 }
