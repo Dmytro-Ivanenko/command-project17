@@ -1,0 +1,56 @@
+<div class="backdrop">
+    <div class="modal-ingredients">
+        <button type="button" class="modal-close-btn">
+            <svg class="modal-close-btn-icon">
+                <use href="./images/icons/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+
+        <p class="modal-about__name">Chololate icecream</p>
+
+        <p>Ingredients</p>
+
+        <ul>
+            <li>Milk</li>
+            <li>Belgian chocolate</li>
+            <li>Cream</li>
+            <li>Cocoa powder</li>
+            <li>Sugar</li>
+            <li>Vanilla sugar</li>
+        </ul>
+
+        <ul>
+            <li>100ml</li>
+            <li>20g</li>
+            <li>150 ml</li>
+            <li>30g</li>
+            <li>40g</li>
+            <li>10g</li>
+        </ul>
+
+        <form>
+            <div>
+                <div class="modal-form-field">
+                    <input type="text" name="user_name" class="modal-form-field-input" required pattern="^[a-zA-Z]+$" minlength="2">
+                    <label for="name" class="modal-form-field-input-desc">Name</label>
+                </div>
+                
+                <div class="modal-form-field">
+                    <input type="tel" name="user_phone" class="modal-form-field-input" required pattern="[789][0-9]{9}">
+                    <label for="tel" class="modal-form-field-input-desc">Phone</label>
+                </div>
+                
+                <div class="modal-form-comment">
+                    <textarea name="user_comment" class="modal-form-textarea"></textarea>
+                    <label class="modal-form-field-input-comment">Comment</label>
+                </div>
+            </div>
+
+            <button>Submit</button>
+        </form>
+
+        
+
+
+    </div>
+</div>

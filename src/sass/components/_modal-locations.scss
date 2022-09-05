@@ -26,20 +26,19 @@
     padding-right: 55px;
 }
 
-.modal-title {
-    font-family: 'Seymour One';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
 
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #000000;
-}
-
-.modal-map {
+.modal-locations__map {
     margin-top: 32px;
     margin-bottom: 32px;
+}
+
+
+.button-modal {
+    align-self: center;
+    
+}
+
+.modal-locations__map {
+    width: 100%;
+    height: 260px;
 }
