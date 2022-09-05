@@ -320,12 +320,6 @@
 	right: -4px;
 }
 
-@media screen and(min-width:768px) {
-	// .happy-ice-cream-box {
-
-	// }
-}
-
 // HERO mobile
 @media screen and (max-width: 767px) {
 	.hero {
@@ -357,11 +351,11 @@
 	}
 
 	.faces--face1 {
-		animation: face1-mobile 1s cubic-bezier(1, -0.01, 0.59, -0.15) 2400ms infinite alternate;
+		animation: face1-mobile 1s cubic-bezier(1, -0.01, 0.59, -0.15) 2400ms alternate;
 	}
 
 	.faces--face2 {
-		animation: face2-mobile 7s cubic-bezier(1, 0, 0, 0.91) 10s infinite alternate;
+		animation: face2-mobile 5s cubic-bezier(1, 0, 0, 0.91) 10s alternate;
 	}
 }
 
@@ -474,7 +468,7 @@
 		top: 80.11px;
 		left: 45.29px;
 
-		animation: face1-tablet 5s cubic-bezier(1, -0.01, 0.59, -0.15) 2400ms infinite alternate;
+		animation: face1-tablet 5s cubic-bezier(1, -0.01, 0.59, -0.15) 2400ms alternate;
 	}
 
 	.faces--face2 {
@@ -483,7 +477,7 @@
 		top: 1px;
 		right: 11px;
 
-		animation: face2-tablet 8s cubic-bezier(1, 0, 0, 0.91) 10s infinite alternate;
+		animation: face2-tablet 5s linear 10s alternate;
 	}
 
 	.faces--face3 {
@@ -572,7 +566,7 @@
 		height: 180px;
 		top: 127.11px;
 		left: 78.29px;
-		animation: face1 2s cubic-bezier(1, -0.01, 0.59, -0.15) 2400ms infinite alternate;
+		animation: face1 2s cubic-bezier(1, -0.01, 0.59, -0.15) 2400ms alternate;
 	}
 
 	.faces--face2 {
@@ -580,7 +574,7 @@
 		height: 214px;
 		top: 15px;
 		right: 22px;
-		animation: face2 5s cubic-bezier(1, 0, 0, 0.91) 10s infinite alternate;
+		animation: face2 5s linear 10s alternate;
 	}
 
 	.faces--face3 {
