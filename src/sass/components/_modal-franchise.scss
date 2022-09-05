@@ -9,7 +9,7 @@
 
 }
 
-.modal {
+.modal-franchise {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -21,8 +21,8 @@
     border: 2px solid #F8D24E;
     border-radius: 10px;
 
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     padding-left: 55px;
     padding-right: 55px;
 
@@ -66,28 +66,20 @@
     color: #000000;
 }
 
-.modal-info {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 140%;
-
-    color: #000000;
-    margin-top: 24px;
-    margin-bottom: 32px;
-}
 
 .modal-form {
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
 }
 
 .modal-form-form{
     display: block;
+    width: 100%;
+    height: 100%;
     padding-left: 40px;
     padding-right: 40px;
-    margin-bottom: 32px;
+    margin-bottom: 30px;
 }
 
 .modal-form-field-input {
@@ -98,14 +90,21 @@
     border-radius: 10px;
     padding-left: 16px;
     color: #000000;
+
+    &::placeholder {
+        font-family: 'Montserrat';
+        @include font(12px, 400, 17px);
+        color: var(--second-font-color);
+    }
+
+    &:focus {
+        outline: none;
+        border: 1.5px solid #0A8817;
+    
+    }
+
+
 }
-
-.modal-form-field-input:focus{
-    outline: none;
-    border: 1.5px solid #0A8817;
-
-}
-
 
 
 .modal-form-field-input:focus ~ .modal-form-field-input-desc {
@@ -206,8 +205,7 @@
 
 
 
-.modal-form-submit {
-
+.button-modal {
     align-self: center;
 }
 
