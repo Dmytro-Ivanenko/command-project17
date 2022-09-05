@@ -3,6 +3,7 @@ padding-top: 60.01px;
 padding-bottom: 42.23px;
 background-color: var(--main-bcg);
 text-transform: uppercase;
+
   
 @media screen and (min-width: 768px) and (max-width: 1200px) {
 padding-top: 60px;  
@@ -11,9 +12,8 @@ padding-bottom: 66px;
 }
   
   // ===Tradition and love===
-.about-section__caption {
+.about-section__coption {
 margin-bottom: 12px;
-font-family: 'Montserrat';
 font-style: normal;
 font-weight: 700;
 font-size: 18px;
@@ -71,29 +71,31 @@ letter-spacing: 0.06em;
 }
 }
 
+
 .about-section__container {
-padding-top: 0;   
+// padding-top: 0; 
 background-image: url(../images/about/mob-sun@1x.png);
 background-repeat: no-repeat;
-display: block;
 background-position: 50% 31.5%;
 
 @media screen and (min-width: 768px) {
+background-position: 3% 60%; 
 background-image: url(../images/about/tablet-sun@1x.png);
-background-position: 3% 60%;
 }
 @media screen and (min-width: 1200px)  {
 background-image: url(../images/about/home-pic.png);
 background-position: left 0% top 70%;
 }
 }
+
+
   // ====/container-imege-yello===
 .about-section__content {
 display: flex;
 flex-direction: column;
 justify-content: center;
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 padding: 4px;
 }
   
@@ -119,9 +121,8 @@ width: 100%;
 margin-bottom: 40.01px;
   
 @media screen and (min-width: 768px) {
-margin-bottom: 80.12;
+margin-bottom: 80.12px;
 margin-right: 32px;
-
 width: 335px;
 }
 @media screen and (min-width: 1200px) {
@@ -135,15 +136,14 @@ width: 500px;
   
   // =====текст======
 .about-section__meta {
-font-family: 'Montserrat';
 font-style: normal;
 text-transform:none;
-@media screen and (min-width: 1px) and (max-width: 768px){
+@media screen and (min-width: 1px) and (max-width: 767px){
 text-align: center;
 margin-left: 30px;
 margin-right: 30px;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 767px) {
 text-transform: left;
 }
 @media screen and (min-width: 1200px) {
@@ -160,7 +160,7 @@ letter-spacing: 0.04em;
 color: var(--card-bcg);
 margin-bottom: 3.83px;
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
 width: 100%;
 margin-top: 16px;
 margin-bottom: 8px;
@@ -230,7 +230,6 @@ letter-spacing: 0.04em;
 }
 .button-about {
 margin: auto;
-font-family: Montserrat;
 text-align: center;
 background: var(--acc-color);
 border-radius: 10px;
