@@ -1,144 +1,136 @@
 .customer-reviews {
-  background-image: url(../images/customer-revievs/background-mobile.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+	background-image: url(../images/customer-revievs/background-mobile.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../images/customer-revievs/background-mobile@2x.jpg);
-  }
+	@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+		background-image: url(../images/customer-revievs/background-mobile@2x.jpg);
+	}
 
-  @media screen and (min-width: 768px) {
-    background-image: url(../images/customer-revievs/background-tablet.jpg);
+	@media screen and (min-width: 768px) {
+		background-image: url(../images/customer-revievs/background-tablet.jpg);
 
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/customer-revievs/background-tabler@2x.jpg);
-    }
-  }
+		@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+			background-image: url(../images/customer-revievs/background-tabler@2x.jpg);
+		}
+	}
 
-  @media screen and (min-width: 1200px) {
-    background-image: url(../images/customer-revievs/background-desktop.jpg);
+	@media screen and (min-width: 1200px) {
+		background-image: url(../images/customer-revievs/background-desktop.jpg);
 
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/customer-revievs/background-desktop@2x.jpg);
-    }
-  }
+		@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+			background-image: url(../images/customer-revievs/background-desktop@2x.jpg);
+		}
+	}
 }
 .reviews__container {
-  padding-top: 161px;
-  padding-bottom: 359px;
+	padding-top: 161px;
+	padding-bottom: 359px;
 
-  @media screen and (min-width: 768px) {
-    padding-top: 218px;
-    padding-bottom: 384px;
-  }
-  @media screen and (min-width: 1200px) {
-    padding-top: 452px;
-    padding-bottom: 207px;
-  }
+	@media screen and (min-width: 768px) {
+		padding-top: 218px;
+		padding-bottom: 384px;
+	}
+	@media screen and (min-width: 1200px) {
+		padding-top: 452px;
+		padding-bottom: 207px;
+	}
 
-  button {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: var(--bcg-btn);
+	button {
+		width: 12px;
+		height: 12px;
+		border-radius: 50%;
+		background-color: var(--bcg-btn);
 
-    font-size: 0;
+		font-size: 0;
 
-    border: none;
-    transition: background-color 250ms linear,
-      transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    cursor: pointer;
+		border: none;
+		transition: background-color 250ms linear, transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+		cursor: pointer;
 
-    &:hover,
-    &:focus,
-    &:active {
-      background-color: var(--bcg-btn-hover);
-      transform: scale(1.4);
-    }
-  }
+		&:hover,
+		&:focus,
+		&:active {
+			background-color: var(--bcg-btn-hover);
+			transform: scale(1.4);
+		}
+	}
 
-  li {
-    &:not(:last-child) {
-      margin-right: 18px;
-    }
-  }
+	li {
+		&:not(:last-child) {
+			margin-right: 18px;
+		}
+	}
 }
 
 .review__photo-wrapper {
-  width: 85px;
-  height: 85px;
-  margin-left: auto;
-  margin-right: auto;
+	width: 85px;
+	height: 85px;
+	margin-left: auto;
+	margin-right: auto;
 }
 .review__photo {
-  border-radius: 50%;
+	border-radius: 50%;
 }
 
 .review__text {
-  max-width: 280px;
-  padding: 43px 50px 17px 50px;
-  margin: 32px auto;
+	max-width: 280px;
+	padding: 43px 50px 17px 50px;
+	margin: 32px auto;
 
-  border-radius: 10px;
-  background-color: var(--main-bcg);
+	border-radius: 10px;
+	background-color: var(--main-bcg);
 
-  font-size: 12px;
-  line-height: 2.55;
-  text-align: center;
-  color: var(--alt-font-color);
+	font-size: 12px;
+	line-height: 2.55;
+	text-align: center;
+	color: var(--alt-font-color);
 
-  @media screen and (min-width: 768px) {
-    max-width: 705px;
-    padding: 29px 80px;
-    border-radius: 24px;
+	@media screen and (min-width: 768px) {
+		max-width: 705px;
+		padding: 29px 80px;
+		border-radius: 24px;
 
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.86;
-  }
-  @media screen and (min-width: 1200px) {
-    max-width: 968px;
-    padding: 39px 109px 47px 109px;
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 1.86;
+	}
+	@media screen and (min-width: 1200px) {
+		max-width: 968px;
+		padding: 39px 109px 47px 109px;
 
-    font-size: 16px;
-  }
+		font-size: 16px;
+	}
 
-  & span {
-    @media screen and (max-width: 767.98px) {
-      display: block;
-      border-bottom: var(--cr-border-bottom);
-    }
-  }
+	& span {
+		@media screen and (max-width: 767.98px) {
+			display: block;
+			border-bottom: var(--cr-border-bottom);
+		}
+	}
 }
 
 .review__name {
-  display: block;
+	display: block;
 
-  font-size: 20px;
-  font-weight: 500;
-  font-style: normal;
-  line-height: 1.86;
-  text-align: center;
-  color: var(--second-font-color);
+	font-size: 20px;
+	font-weight: 500;
+	font-style: normal;
+	line-height: 1.86;
+	text-align: center;
+	color: var(--second-font-color);
 
-  @media screen and (min-width: 768px) {
-    font-size: 16px;
-  }
+	@media screen and (min-width: 768px) {
+		font-size: 16px;
+	}
 }
 
 .slick-dots {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 207px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .slick-active > button {
-  background-color: var(--bcg-btn-hover);
+	background-color: var(--bcg-btn-hover);
 }
