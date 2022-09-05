@@ -75,8 +75,8 @@
 
 .review__text {
 	max-width: 280px;
-	padding: 43px 50px 17px 50px;
-	margin: 32px auto;
+	padding: 34px 39px;
+	margin: 32px auto 30px auto;
 
 	border-radius: 10px;
 	background-color: var(--main-bcg);
@@ -100,13 +100,6 @@
 		padding: 39px 109px 47px 109px;
 
 		font-size: 16px;
-	}
-
-	& span {
-		@media screen and (max-width: 767.98px) {
-			display: block;
-			border-bottom: var(--cr-border-bottom);
-		}
 	}
 }
 
