@@ -1,243 +1,252 @@
 .about-section {
-    padding-top: 60px;
-    padding-bottom: 39px;
-    background-color: var(--main-bcg);
-    text-transform: uppercase;
+padding-top: 60.01px;
+padding-bottom: 42.23px;
+background-color: var(--main-bcg);
+text-transform: uppercase;
   
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-      padding-bottom: 66px;
-    }
-  }
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+padding-top: 60px;  
+padding-bottom: 66px;
+}
+}
   
   // ===Tradition and love===
-  .about-section__caption {
-    margin-bottom: 12px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 22px;
-    text-align: center;
-    text-transform: uppercase;
-    color: var(--modal-bcg);
+.about-section__caption {
+margin-bottom: 12px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 22px;
+text-align: center;
+text-transform: uppercase;
+color: var(--modal-bcg);
   
-    @media screen and (min-width: 768px) {
-      font-size: 22px;
-      line-height: 27px;
-      letter-spacing: 0.04em;     
-    }
-    @media screen and (min-width: 1200px) {
-      font-weight: 800;
-      font-size: 30px;
-      line-height: 37px;
-      text-align: center;
-      letter-spacing: 0.04em;
-    }
-  }
+@media screen and (min-width: 768px) {
+font-size: 22px;
+line-height: 27px;
+letter-spacing: 0.04em;     
+}
+@media screen and (min-width: 1200px) {
+font-weight: 800;
+font-size: 30px;
+line-height: 37px;
+text-align: center;
+letter-spacing: 0.04em;
+}
+}
   // ===/Tradition and love==
   
   // ======How it’s made?========
-  .about-section__title {
-    margin-left: 52px;
-    margin-right: 52px;
-    margin-bottom: 53.83px;
-    display: block;
-    font-family: 'Seymour One';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 38px;
-    text-align: center;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: var(--modal-bcg);
+.about-section__title {
+width: 200px;
+margin: auto;
+margin-bottom: 53.83px;
+display: block;
+font-family: 'Seymour One';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 38px;
+text-align: center;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: var(--modal-bcg);
   
-    @media screen and (min-width: 768px) {
-  
-      margin: auto;
-      margin-bottom: 50px;
-      font-size: 34px;
-      line-height: 43px;
-      text-align: center;
-      letter-spacing: 0.06em;
-    }
-    @media screen and (min-width: 1200px) {
-      margin-bottom: 55px;
-      font-size: 36px;
-      line-height: 45px;
-      text-align: center;
-      letter-spacing: 0.06em;
-    }
-  }
-  
-  .about-section__container {
-    
-    background-image: url(../images/about/sun-mobile@1x.png);
-    background-repeat: no-repeat;
-    background-position: right 3% bottom 70%;
-    @media screen and (min-width: 768px) {
-      background-image: url(../images/about/sun-tablet@1x.png);
-      background-position: left 6% bottom 50%;
-    }
-    @media screen and (min-width: 1200px)  {
-      background-image: url(../images/about/sun-desktop@1x.png);
-      background-position: left -3% bottom 35%;
-    }
-  }
-  // ====/container-imege-yello===
-  .about-section__content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+@media screen and (min-width: 768px) {
+width: auto;
+margin: auto;
+margin-bottom: 65.88px;
+font-size: 34px;
+line-height: 43px;
+text-align: center;
+letter-spacing: 0.06em;
+}
+@media screen and (min-width: 1200px) {
+margin-bottom: 121px;
+font-size: 36px;
+line-height: 45px;
+text-align: center;
+letter-spacing: 0.06em;
+}
+}
 
-    @media screen and (max-width: 768px) {
-      padding: 4px;
-    }
+.about-section__container {
+padding-top: 0;   
+background-image: url(../images/about/mob-sun@1x.png);
+background-repeat: no-repeat;
+display: block;
+background-position: 50% 31.5%;
+
+@media screen and (min-width: 768px) {
+background-image: url(../images/about/tablet-sun@1x.png);
+background-position: 3% 60%;
+}
+@media screen and (min-width: 1200px)  {
+background-image: url(../images/about/home-pic.png);
+background-position: left 0% top 70%;
+}
+}
+  // ====/container-imege-yello===
+.about-section__content {
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+@media screen and (max-width: 768px) {
+padding: 4px;
+}
   
-    @media screen and (min-width: 768px) {
-      flex-direction: row;
-      justify-content: space-between;
-    }
-    @media screen and (min-width: 1200px) {
-      align-items: flex-start;
-    }
-  }
+@media screen and (min-width: 768px) {
+flex-direction: row;
+justify-content: space-between;
+margin-left: 1.35px;
+}
+@media screen and (min-width: 1200px) {
+align-items: flex-start;
+margin-left: 2px;
+}
+}
   // ===cow photo===
-  .about-section__image {
-    border-radius: 50%;
-    width: 100%;
-  }
-  .about-section__image {
-    display: block;
-    text-align: center;
-    width: 100%;
-    margin-bottom: 40.01px;
+.about-section__image {
+border-radius: 50%;
+width: 100%;
+}
+.about-section__image {
+display: block;
+text-align: center;
+width: 100%;
+margin-bottom: 40.01px;
   
-    @media screen and (min-width: 768px) {
-      margin-bottom: 80.12;
-      margin-right: 32px;
-      margin-left: 12px;
-      width: 335px;
-     
-    }
-    @media screen and (min-width: 1200px) {
-      margin-right: 108px;
-      margin-bottom: 60px;
-      margin-left: 0px;
-      width: 500px;
-    }
-  }
+@media screen and (min-width: 768px) {
+margin-bottom: 80.12;
+margin-right: 32px;
+
+width: 335px;
+}
+@media screen and (min-width: 1200px) {
+margin-right: 108px;
+margin-bottom: 60px;
+width: 500px;
+}
+}
   // ===/cow photo===
   
   
   // =====текст======
-  .about-section__meta {
-    font-family: 'Montserrat';
-    font-style: normal;
-    text-transform:none;
-    @media screen and (min-width: 1px) and (max-width: 768px){
-      text-align: center;
-      margin-left: 30px;
-      margin-right: 30px;
-    }
-    @media screen and (min-width: 769px) {
-    text-transform: left;
-    }
-    @media screen and (min-width: 1200px) {
-      
-      margin-right:  100px;
-      }
-  }
-  .about-section__heading {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 176%;
-    letter-spacing: 0.04em;
-    color: var(--card-bcg);
+.about-section__meta {
+font-family: 'Montserrat';
+font-style: normal;
+text-transform:none;
+@media screen and (min-width: 1px) and (max-width: 768px){
+text-align: center;
+margin-left: 30px;
+margin-right: 30px;
+}
+@media screen and (min-width: 769px) {
+text-transform: left;
+}
+@media screen and (min-width: 1200px) {
+margin-right:  100px;
+}
+}
+.about-section__heading {
+width: 220px;
+margin: auto;
+font-weight: 400;
+font-size: 12px;
+line-height: 176%;
+letter-spacing: 0.04em;
+color: var(--card-bcg);
+margin-bottom: 3.83px;
+
+@media screen and (min-width: 769px) {
+width: 100%;
+margin-top: 16px;
+margin-bottom: 8px;
+font-size: 12px;
+line-height: 176%;
+letter-spacing: 0.04em;
+}
   
-    margin-bottom: 3.83px;
-    @media screen and (min-width: 769px) {
-      margin-bottom: 8px;
-      font-size: 12px;
-      line-height: 176%;
-      letter-spacing: 0.04em;
-    }
-  
-    @media screen and (min-width: 1200px) {
-      margin-bottom: 8px;
-      font-size: 16px;
-      line-height: 176%;
-      letter-spacing: 0.04em;
-    }
-  }
+@media screen and (min-width: 1200px) {
+margin-top: 46px;  
+margin-bottom: 8px;
+font-size: 16px;
+line-height: 176%;
+letter-spacing: 0.04em;
+}
+}
  
-  .about-section__text {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 162%;
-    color: var(--modal-bcg);
-    margin-bottom: 20px;
+.about-section__text {
+width: 220px;
+margin: auto;
+font-weight: 400;
+font-size: 12px;
+line-height: 162%;
+color: var(--modal-bcg);
+margin-bottom: 20px;
   
-    @media screen and (min-width: 768px) {
-      margin-bottom: 8px;
-      text-transform: left;
-      font-size: 12px;
-      line-height: 176%;
-      letter-spacing: 0.04em;
-    }
-    @media screen and (min-width: 1200px) {
-      margin-bottom: 8px;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 194%;
-      letter-spacing: 0.04em;
-    }
-  }
- 
-  .about-section__text--bottom {
-    
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 162%;
-    color:var(--modal-bcg);
+@media screen and (min-width: 768px) {
+width: 100%;
+margin-bottom: 8px;
+text-transform: left;
+font-size: 12px;
+line-height: 176%;
+letter-spacing: 0.04em;
+}
+@media screen and (min-width: 1200px) {
+margin-bottom: 8px;
+font-weight: 400;
+font-size: 14px;
+line-height: 194%;
+letter-spacing: 0.04em;
+}
+}
+ .about-section__text--bottom {
+font-weight: 400;
+font-size: 12px;
+line-height: 162%;
+color:var(--modal-bcg);
   
-    @media screen and (min-width: 1px) and (max-width: 767px){
-      display: none;
-    }
-    @media screen and (min-width: 768px) {
-      margin-bottom: 48px;
-      font-weight: 400;
-      font-size: 12px;
-      line-height: 194%;
-      letter-spacing: 0.04em;
-    }
-    @media screen and (min-width: 1199px) {
-      margin-bottom: 48px;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 194%;
-      letter-spacing: 0.04em;
-    }
-  }
-  .button-about {
-    margin: auto;
-    font-family: Montserrat;
-    text-align: center;
-    background: var(--acc-color);
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-style: normal;
+@media screen and (min-width: 1px) and (max-width: 767px){
+position: absolute;
+clip: rect(0 0 0 0);
+}
+@media screen and (min-width: 768px) {
+margin-bottom: 48px;
+font-weight: 400;
+font-size: 12px;
+line-height: 194%;
+letter-spacing: 0.04em;
+}
+@media screen and (min-width: 1200px) {
+margin-bottom: 48px;
+font-weight: 400;
+font-size: 14px;
+line-height: 194%;
+letter-spacing: 0.04em;
+}
+}
+.button-about {
+margin: auto;
+font-family: Montserrat;
+text-align: center;
+background: var(--acc-color);
+border-radius: 10px;
+ display: flex;
+justify-content: center;
+align-items: center;
+font-style: normal;
   
-    @include font(14px, 600, 17px);
-    @include padding-button(12px, 12px, 34px, 34px);
+@include font(14px, 600, 17px);
+@include padding-button(12px, 12px, 34px, 34px);
   
-    &:hover,
-    &:focus {
-      background-color: var(--active-button);
-    }
-    @media screen and (min-width: 768px) {
-        margin: 0;
+&:hover,
+&:focus {
+background-color: var(--active-button);
+}
+@media screen and (min-width: 768px) {
+    margin: 0;
     }
   }
