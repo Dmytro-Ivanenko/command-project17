@@ -24,15 +24,7 @@
 	}
 }
 
-@keyframes rotate-circle {
-	0% {
-	}
-
-	100% {
-		transform: rotateZ(360deg);
-	}
-}
-
+// Faces
 @keyframes face1 {
 	0% {
 	}
@@ -46,7 +38,7 @@
 	0% {
 	}
 
-	50% {
+	40% {
 		top: -42px;
 	}
 
