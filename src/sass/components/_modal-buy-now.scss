@@ -303,82 +303,54 @@ textarea {
 	box-shadow: 0px 5.34px 20.03px rgba(0, 0, 0, 0.25);
 }
 
-@media screen and (max-width: 767px) {
-	.modal {
-		width: 100%;
-		max-width: 280px;
+.modal__name {
+	@include font(20px, 400, 28px);
 
-		// height: 609px;
+	margin-bottom: 103px;
+}
+
+.modal__list {
+	display: flex;
+	margin-bottom: 40px;
+	gap: 32px;
+	flex-wrap: wrap;
+}
+
+.modal__item-prod-1,
+.modal__item-prod-2,
+.modal__item-prod-3 {
+	margin: 0;
+	flex-basis: calc((100% - 64px) / 3);
+}
+
+.modal__item-prod-1:not(:last-child),
+.modal__item-prod-2:not(:last-child),
+.modal__item-prod-3:not(:last-child) {
+	margin-bottom: 0;
+}
+.modal-form__input {
+	width: 368px;
+
+	height: 42px;
+
+	&::placeholder {
+		@include font(14px, 400, 20px);
 	}
 }
-@media screen and (min-width: 768px) {
-	.modal {
-		padding: 32px;
-		height: auto;
-		max-height: 644px;
+.modal-form__message {
+	width: 368px;
+	margin-bottom: 32px;
+	&::placeholder {
+		@include font(14px, 400, 20px);
 	}
-	.button-modal {
-		padding: 12px 43px;
-	}
+}
+.modal-form {
+	align-items: center;
+}
 
-	.modal-close-btn {
-		top: 20px;
-		right: 20px;
-	}
-	.modal-close-btn__icon {
-		width: 20;
-		height: 20;
-	}
-
-	.modal__name {
-		@include font(20px, 400, 28px);
-
-		margin-bottom: 103px;
-	}
-
-	.modal__list {
-		display: flex;
-		margin-bottom: 40px;
-		gap: 32px;
-		flex-wrap: wrap;
-	}
-
-	.modal__item-prod-1,
-	.modal__item-prod-2,
-	.modal__item-prod-3 {
-		margin: 0;
-		flex-basis: calc((100% - 64px) / 3);
-	}
-
-	.modal__item-prod-1:not(:last-child),
-	.modal__item-prod-2:not(:last-child),
-	.modal__item-prod-3:not(:last-child) {
-		margin-bottom: 0;
-	}
-	.modal-form__input {
-		width: 368px;
-
-		height: 42px;
-
-		&::placeholder {
-			@include font(14px, 400, 20px);
-		}
-	}
-	.modal-form__message {
-		width: 368px;
-		margin-bottom: 32px;
-		&::placeholder {
-			@include font(14px, 400, 20px);
-		}
-	}
-	.modal-form {
-		align-items: center;
-	}
-
-	.modal-form__field {
-		margin-bottom: 16px;
-	}
-	.button-modal {
-		@include font(14px, 600, 17px);
-	}
+.modal-form__field {
+	margin-bottom: 16px;
+}
+.button-modal {
+	@include font(14px, 600, 17px);
 }
