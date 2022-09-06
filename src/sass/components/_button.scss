@@ -65,7 +65,8 @@
 	justify-content: center;
 	align-items: center;
 	font-style: normal;
-
+	stroke: var(--second-font-color);
+	fill: var(--second-font-color);
 	@include font(14px, 600, 17px);
 	@include padding-button(12px, 12px, 34px, 34px);
 
@@ -75,6 +76,8 @@
 	&:focus {
 		background-color: var(--active-button);
 		color: var(--alt-font-color);
+		stroke: var(--alt-font-color);
+		fill: var(--alt-font-color);
 	}
 	@extend %animation;
 }
