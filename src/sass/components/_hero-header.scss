@@ -205,8 +205,10 @@
 		@include font-line(48px, 58.5px);
 	}
 
-	.button-header--in-burger {
-		display: none;
+	.burger-menu {
+		.button-header--in-burger {
+			display: none;
+		}
 	}
 }
 
