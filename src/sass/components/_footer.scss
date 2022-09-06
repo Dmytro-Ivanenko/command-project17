@@ -9,7 +9,6 @@ footer {
 }
 
 .footer-container {
-	display: block;
 	width: 100%;
 	// width: 480px;
 	height: 373px;
@@ -22,7 +21,7 @@ footer {
 }
 .moto-first {
 	font-size: 18px;
-	color: #fcfcfc;
+	color: var(--alt-font-color);
 	line-height: 1.22;
 	text-transform: uppercase;
 	text-decoration: none;
@@ -32,7 +31,7 @@ footer {
 	height: 43px;
 }
 .moto-second {
-	color: #fcfcfc;
+	color: var(--alt-font-color);
 
 	font-weight: 700;
 	font-size: 34px;
@@ -44,7 +43,7 @@ footer {
 	height: 77px;
 }
 .contact-footer__offer {
-	color: #131313;
+	color: var(--first-font-color);
 
 	font-size: 12px;
 	line-height: 1.83;
@@ -138,7 +137,6 @@ p.footer-under__copyright:before {
 
 @media screen and (min-width: 768px) {
 	.footer-container {
-		display: block;
 		width: 100%;
 		// width: 768px;
 		padding-left: 32px;
