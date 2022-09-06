@@ -1,11 +1,12 @@
 <section class="contacts" id="contacts">
 	<div class="container">
 		<div class="contacts__block">
+			<h2 class="visually-hiden">Contacts</h2>
 			<ul class="contacts__list">
 				<li class="contacts__item">
 					<p class="contacts__suptitle">Cafe</p>
 					<h3 class="contacts__title contacts__title--margin">Chicago</h3>
-					<p class="contacts__text">10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA</p>
+					<a class="contacts__text">10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA</a>
 					<ul class="contacts__list--line">
 						<li>
 							<h3 class="contacts__title">Monday - Friday</h3>
@@ -28,7 +29,7 @@
 				<li class="contacts__item">
 					<p class="contacts__suptitle">Food Truck</p>
 					<h3 class="contacts__title contacts__title--margin">Los Angeles</h3>
-					<p class="contacts__text">1003 Manhattan Ave, Manhattan Beach, CA 90263, USA</p>
+					<a class="contacts__text">1003 Manhattan Ave, Manhattan Beach, CA 90263, USA</a>
 					<ul class="contacts__list--line">
 						<li>
 							<h3 class="contacts__title">Monday - Friday</h3>
@@ -51,7 +52,7 @@
 				<li class="contacts__item">
 					<p class="contacts__suptitle">Cafe</p>
 					<h3 class="contacts__title contacts__title--margin">New York</h3>
-					<p class="contacts__text">726 Sterling Pl, Brooklyn, NY 11222, USA</p>
+					<a class="contacts__text">726 Sterling Pl, Brooklyn, NY 11222, USA</a>
 					<ul class="contacts__list--line">
 						<li>
 							<h3 class="contacts__title">Monday - Friday</h3>
@@ -74,14 +75,14 @@
 			</ul>
 		</div>
 		<div class="buttons">
-			<button type="button" class="button-locations">
+			<button type="button" class="button-locations" data-toggle="modal" data-target="#modal-1">
 				Our locations
 				<svg class="button-contacts__svg" width="6" height="10">
 					<use href="./images/icons/icons.svg#icon-button-greather"></use>
 				</svg>
 			</button>
 
-			<button type="button" class="button-franchise">
+			<button type="button" class="button-franchise" data-toggle="modal" data-target="#modal-2">
 				Franchise
 				<svg class="button-contacts__svg" width="6" height="10">
 					<use href="./images/icons/icons.svg#icon-button-greather"></use>

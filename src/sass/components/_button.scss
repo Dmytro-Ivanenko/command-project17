@@ -1,130 +1,147 @@
 // mobile buttons
 
 .button-header {
-  // font-family: Montserrat;
-  text-align: center;
-  background: var(--acc-color);
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-style: normal;
+	// font-family: Montserrat;
+	text-align: center;
+	background: var(--acc-color);
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-style: normal;
 
-  @include font(14px, 600, 17px);
-  @include padding-button(12px, 12px, 33px, 33px);
+	@include font(14px, 600, 17px);
+	@include padding-button(12px, 12px, 33px, 33px);
 
-  &:hover,
-  &:focus {
-    background-color: #0a8817;
-  }
+	&:hover {
+		background-color: var(--active-button);
+	}
+	&:focus {
+		background-color: var(--active-button);
+		color: var(--alt-font-color);
+	}
+	@extend %animation;
 }
 
 .button-header__svg {
-  margin-left: 15px;
-  fill: #000000;
+	margin-left: 15px;
+	fill: var(--second-font-color);
+	&:focus {
+		fill: var(--alt-font-color);
+	}
+	@extend %animation;
 }
 
 .button-hero {
-  // font-family: Montserrat;
-  text-align: center;
-  border: 2px solid #f8d24e;
-  border-radius: 8px;
-  @include font(14px, 600, 17px);
-  @include padding-button(12px, 12px, 36px, 36px);
+	// font-family: Montserrat;
+	text-align: center;
+	border: 2px solid #f8d24e;
+	border-radius: 8px;
+	@include font(14px, 600, 17px);
+	@include padding-button(12px, 12px, 36px, 36px);
 
-  &:hover,
-  &:focus {
-    border-color: #0a8817;
-  }
+	&:hover {
+		border-color: var(--active-button);
+	}
+	&:focus {
+		border-color: var(--active-button);
+		color: var(--alt-font-color);
+	}
+	@extend %animation;
 }
 .button-about {
-  // font-family: Montserrat;
-  text-align: center;
-  background: var(--acc-color);
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-style: normal;
+	// font-family: Montserrat;
+	text-align: center;
+	background: var(--acc-color);
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-style: normal;
 
-  @include font(14px, 600, 17px);
-  @include padding-button(12px, 12px, 34px, 34px);
+	@include font(14px, 600, 17px);
+	@include padding-button(12px, 12px, 34px, 34px);
 
-  &:hover,
-  &:focus {
-    background-color: #0a8817;
-  }
+	&:hover {
+		background-color: var(--active-button);
+	}
+	&:focus {
+		background-color: var(--active-button);
+		color: var(--alt-font-color);
+	}
+	@extend %animation;
 }
 
 .button-locations {
-  // font-family: Montserrat;
-  width: 164px;
-  text-align: center;
-  background: var(--acc-color);
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-style: normal;
+	// font-family: Montserrat;
+	text-align: center;
+	background: var(--acc-color);
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-style: normal;
 
-  @include font(14px, 600, 17px);
-  @include padding-button(13px, 13px, 15px, 17px);
+	@include font(14px, 600, 17px);
+	@include padding-button(13px, 13px, 15px, 17px);
 
-  &:hover,
-  &:focus {
-    background-color: #0a8817;
-  }
-    @media screen and (max-width:767px) {
-      margin-bottom: 16px;
-    }
-    @media screen and (min-width:768px) {
-      width: 196px;
-      margin-right: 16px;
-    }
-    @media screen and (min-width:1200px) {
-      margin-right: 24px;
-    }
+	&:hover {
+		background-color: var(--active-button);
+	}
+	&:focus {
+		background-color: var(--active-button);
+		color: var(--alt-font-color);
+	}
+	@extend %animation;
 }
 
 .button-contacts__svg {
-  margin-left: 7px;
-  fill: #000000;
+	margin-left: 7px;
+	fill: var(--second-font-color);
+	&:focus {
+		fill: var(--alt-font-color);
+	}
+	@extend %animation;
 }
 
 .button-franchise {
-  // font-family: Montserrat;
-  width: 164px;
-  text-align: center;
-  border: 2px solid #f8d24e;
-  color: var(--first-font-color);
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-style: normal;
-  @include font(14px, 600, 17px);
-  @include padding-button(13px, 13px, 31px, 31px);
+	// font-family: Montserrat;
+	text-align: center;
+	border: 2px solid #f8d24e;
+	color: var(--second-font-color);
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-style: normal;
+	@include font(14px, 600, 17px);
+	@include padding-button(13px, 13px, 31px, 31px);
 
-  &:hover,
-  &:focus {
-    border-color: #0a8817;
-  }
-  @media screen and (min-width:768px) {
-    width: 196px;
-  }
+	&:hover {
+		border-color: var(--active-button);
+	}
+	&:focus {
+		border-color: var(--active-button);
+		color: var(--alt-font-color);
+	}
+	@extend %animation;
 }
 
 .button-modal {
-  // font-family: Montserrat;
-  text-align: center;
-  background: var(--acc-color);
-  border-radius: 10px;
+	// font-family: Montserrat;
+	text-align: center;
+	background: var(--acc-color);
+	border-radius: 10px;
 
-  @include font(12px, 600, 15px);
-  @include padding-button(7px, 7px, 43px, 43px);
+	@include font(12px, 600, 15px);
+	@include padding-button(7px, 7px, 43px, 43px);
 
-  &:hover,
-  &:focus {
-    background-color: #0a8817;
-  }
+	&:hover {
+		background-color: var(--active-button);
+	}
+	&:focus {
+		background-color: var(--active-button);
+		color: var(--alt-font-color);
+	}
+	@extend %animation;
 }

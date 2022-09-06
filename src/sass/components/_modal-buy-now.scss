@@ -1,218 +1,384 @@
-.backdrop {
-  position: fixed;
-  z-index: 100;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.backdrop.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  padding: 28px;
-  transform: translate(-50%, -50%);
-  background-color: #ffffff;
-  width: 568px;
-  // height: 100vh;
-
-  border: 2px solid var(--acc-color);
-  border-radius: 10px;
-}
-
-.modal-close-btn {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-
-  &:hover,
-  &:focus {
-    fill: var(--acc-color);
-  }
-}
-
-.modal-close-btn__icon {
-  width: 16;
-  height: 16;
+.modal-window-container {
+	background-color: #fff;
 }
 
 .modal-form {
-  display: flex;
-  flex-direction: column;
-  // align-items: center;
-  // justify-content: center;
+	display: flex;
+	flex-direction: column;
+	// align-items: center;
+	// justify-content: center;
 }
 
 .modal__name {
-  font-family: 'Seymour One';
-  font-style: normal;
-  text-align: center;
-  @include font(16px, 400, 24px);
+	font-family: "Seymour One";
+	font-style: normal;
+	text-align: center;
+	@include font(16px, 400, 24px);
 
-  margin-bottom: 20px;
+	margin-bottom: 83px;
+}
+
+.modal__wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .modal__list {
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
-  margin-bottom: 24px;
+	// display: flex;
+	// flex-direction: column;
+	// align-items: center;
+	margin-bottom: 24px;
 }
 
-.modal__item {
-  width: 132px;
-  margin-right: auto;
-  margin-left: auto;
-  height: 135px;
-  border: 2px solid #96af8c;
-  box-shadow: (0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
-  border-radius: 15.7808px;
+.modal__item-prod-1 {
+	position: relative;
+	width: 132px;
+	margin-right: auto;
+	margin-left: auto;
+	height: 135px;
+	border: 2px solid #96af8c;
+	// box-shadow: (0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+	border-radius: 15.7808px;
+}
+.modal__item-prod-2 {
+	position: relative;
+	width: 132px;
+	margin-right: auto;
+	margin-left: auto;
+	height: 135px;
+	border: 2px solid #efd478;
+	background-color: #efd478;
+	box-shadow: (0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+	border-radius: 15.7808px;
+}
+.modal__item-prod-3 {
+	position: relative;
+	width: 132px;
+	margin-right: auto;
+	margin-left: auto;
+	height: 135px;
+	border: 2px solid #d6936d;
+	border-radius: 15.7808px;
 }
 
-.modal__item:not(:last-child) {
-  margin-bottom: 12px;
+.modal__item-prod-1:not(:last-child),
+.modal__item-prod-2:not(:last-child),
+.modal__item-prod-3:not(:last-child) {
+	margin-bottom: 83px;
 }
 .modal__card-label {
-  text-transform: uppercase;
-  text-align: center;
-  @include font(16px, 400, 24px);
-  letter-spacing: 0.04em;
+	margin-top: 95px;
+	text-transform: uppercase;
+	text-align: center;
+	@include font(16px, 700, 20px);
+	letter-spacing: 0.04em;
 }
 
 .modal-form__field {
-  margin-bottom: 12px;
+	margin-bottom: 12px;
 }
 
 .modal-form__input {
-  outline: none;
-  width: 100%;
-  // max-width: 368px;
-  height: 32px;
-  padding: 8px 12px;
-  background: rgba(248, 210, 78, 0.1);
-  border: 1px solid var(--bcg-btn-hover);
-  border-radius: 10px;
-  //   transition: border-color var(--transition-dur-and-func);
+	outline: none;
+	width: 100%;
+	// max-width: 368px;
+	height: 32px;
+	padding: 8px 12px;
+	background: rgba(248, 210, 78, 0.1);
+	border: 1px solid var(--bcg-btn-hover);
+	border-radius: 10px;
+	//   transition: border-color var(--transition-dur-and-func);
 
-  &::placeholder {
-    font-family: 'Montserrat';
-    @include font(12px, 400, 17px);
-    color: var(--second-font-color);
-  }
-  &:focus {
-    border-color: var(--acc-color);
-  }
+	&::placeholder {
+		font-family: "Montserrat";
+		@include font(12px, 400, 17px);
+		color: var(--second-font-color);
+	}
+	&:focus {
+		border-color: var(--acc-color);
+	}
+	@extend %animation;
 }
 
 .modal-form__message {
-  resize: none;
-  outline: none;
-  width: 100%;
-  // max-width: 368px;
-  margin-bottom: 24px;
-  height: 64px;
-  padding: 8px 12px;
-  background: rgba(248, 210, 78, 0.1);
-  border: 1px solid var(--bcg-btn-hover);
-  border-radius: 10px;
-  //   transition: border-color var(--transition-dur-and-func);
+	resize: none;
+	outline: none;
+	width: 100%;
+	// max-width: 368px;
+	margin-bottom: 24px;
+	height: 64px;
+	padding: 8px 12px;
+	background: rgba(248, 210, 78, 0.1);
+	border: 1px solid var(--bcg-btn-hover);
+	border-radius: 10px;
+	//   transition: border-color var(--transition-dur-and-func);
 
-  &::placeholder {
-    font-family: 'Montserrat';
-    @include font(12px, 400, 17px);
-    color: var(--second-font-color);
-  }
-  &:focus {
-    border-color: var(--acc-color);
-  }
+	&::placeholder {
+		font-family: "Montserrat";
+		@include font(12px, 400, 17px);
+		color: var(--second-font-color);
+	}
+	&:focus {
+		border-color: var(--acc-color);
+	}
 }
 textarea {
-  vertical-align: top;
+	vertical-align: top;
 }
 
 .button-modal {
-  align-self: center;
+	align-self: center;
+	// @extend %animation;
+}
+
+// ==========================product-123==================
+.prod-1::before,
+.prod-2::before,
+.prod-3::before {
+	display: block;
+	content: "";
+	width: 132px;
+	height: 138px;
+	border-radius: 50%;
+	background-size: cover;
+
+	position: absolute;
+	z-index: 100;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.prod-1::before {
+	background-image: url(../images/products/ice-cream-mobile.jpg);
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+	screen and (min-resolution: 192dpi) and (max-width: 767px),
+	screen and (min-resolution: 2dppx) and (max-width: 767px) {
+	.prod-1::before {
+		background-image: url(../images/products/ice-cream-mobile@2x.jpg);
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.prod-1::before {
+		background-image: url(../images/products/ice-cream-tablet.jpg);
+	}
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+	screen and (min-resolution: 192dpi) and (min-width: 768px),
+	screen and (min-resolution: 2dppx) and (min-width: 768px) {
+	.prod-1::before {
+		background-image: url(../images/products/ice-cream-tablet@2x.jpg);
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.prod-1::before {
+		background-image: url(../images/products/ice-cream-desktop.jpg);
+	}
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+	screen and (min-resolution: 192dpi) and (min-width: 1200px),
+	screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+	.prod-1::before {
+		background-image: url(../images/products/ice-cream-desktop@2x.jpg);
+	}
+}
+
+.prod-2::before {
+	background-image: url(../images/products/ice-coffee-mobile.jpg);
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+	screen and (min-resolution: 192dpi) and (max-width: 767px),
+	screen and (min-resolution: 2dppx) and (max-width: 767px) {
+	.prod-2::before {
+		background-image: url(../images/products/ice-coffee-mobile@2x.jpg);
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.prod-2::before {
+		background-image: url(../images/products/ice-coffee-tablet.jpg);
+	}
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+	screen and (min-resolution: 192dpi) and (min-width: 768px),
+	screen and (min-resolution: 2dppx) and (min-width: 768px) {
+	.prod-2::before {
+		background-image: url(../images/products/ice-coffee-tablet@2x.jpg);
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.prod-2::before {
+		background-image: url(../images/products/ice-coffee-desktop.jpg);
+	}
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+	screen and (min-resolution: 192dpi) and (min-width: 1200px),
+	screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+	.prod-2::before {
+		background-image: url(../images/products/ice-coffee-desktop@2x.jpg);
+	}
+}
+
+.prod-3::before {
+	background-image: url(../images/products/milkshake-mobile.jpg);
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+	screen and (min-resolution: 192dpi) and (max-width: 767px),
+	screen and (min-resolution: 2dppx) and (max-width: 767px) {
+	.prod-3::before {
+		background-image: url(../images/products/milkshake-mobile@2x.jpg);
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.prod-3::before {
+		background-image: url(../images/products/milkshake-tablet.jpg);
+	}
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+	screen and (min-resolution: 192dpi) and (min-width: 768px),
+	screen and (min-resolution: 2dppx) and (min-width: 768px) {
+	.prod-3::before {
+		background-image: url(../images/products/milkshake-tablet@2x.jpg);
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.prod-3::before {
+		background-image: url(../images/products/milkshake-desktop.jpg);
+	}
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+	screen and (min-resolution: 192dpi) and (min-width: 1200px),
+	screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+	.prod-3::before {
+		background-image: url(../images/products/milkshake-desktop@2x.jpg);
+	}
+}
+
+// =====================after==================
+
+.prod-1::after,
+.prod-2::after,
+.prod-3::after {
+	display: block;
+	content: "";
+	width: 132px;
+	height: 138px;
+	border-radius: 50%;
+
+	position: absolute;
+	z-index: 99;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, -45%);
+}
+
+.prod-1::after {
+	background: var(--cream-img-bcg);
+	box-shadow: 0px 5.34px 20.03px rgba(10, 136, 23, 0.25);
+}
+
+.prod-2::after {
+	background: var(--coffee-img-bcg);
+	box-shadow: 0px 5.34px 20.03px rgba(153, 114, 23, 0.25);
+}
+
+.prod-3::after {
+	background: var(--milk-img-bcg);
+	box-shadow: 0px 5.34px 20.03px rgba(0, 0, 0, 0.25);
 }
 
 @media screen and (max-width: 767px) {
-  .modal {
-    width: 100%;
-    max-width: 280px;
+	.modal {
+		width: 100%;
+		max-width: 280px;
 
-    // height: 609px;
-  }
+		// height: 609px;
+	}
 }
 @media screen and (min-width: 768px) {
-  .modal {
-    padding: 32px;
-  }
-  .button-modal {
-    padding: 12px 43px;
-  }
+	.modal {
+		padding: 32px;
+		height: auto;
+		max-height: 644px;
+	}
+	.button-modal {
+		padding: 12px 43px;
+	}
 
-  .modal-close-btn {
-    top: 20px;
-    right: 20px;
-  }
-  .modal-close-btn__icon {
-    width: 20;
-    height: 20;
-  }
+	.modal-close-btn {
+		top: 20px;
+		right: 20px;
+	}
+	.modal-close-btn__icon {
+		width: 20;
+		height: 20;
+	}
 
-  .modal__name {
-    @include font(20px, 400, 28px);
+	.modal__name {
+		@include font(20px, 400, 28px);
 
-    margin-bottom: 40px;
-  }
+		margin-bottom: 103px;
+	}
 
-  .modal__card-label {
-    @include font(20px, 400, 28px);
-  }
+	.modal__list {
+		display: flex;
+		margin-bottom: 40px;
+		gap: 32px;
+		flex-wrap: wrap;
+	}
 
-  .modal__list {
-    display: flex;
-    margin-bottom: 40px;
-    gap: 32px;
-    flex-wrap: wrap;
-  }
+	.modal__item-prod-1,
+	.modal__item-prod-2,
+	.modal__item-prod-3 {
+		margin: 0;
+		flex-basis: calc((100% - 64px) / 3);
+	}
 
-  .modal__item {
-    margin: 0;
-    flex-basis: calc((100% - 64px) / 3);
-  }
+	.modal__item-prod-1:not(:last-child),
+	.modal__item-prod-2:not(:last-child),
+	.modal__item-prod-3:not(:last-child) {
+		margin-bottom: 0;
+	}
+	.modal-form__input {
+		width: 368px;
 
-  .modal__item:not(:last-child) {
-    margin-bottom: 0;
-  }
-  .modal-form__input {
-    width: 368px;
+		height: 42px;
 
-    height: 42px;
+		&::placeholder {
+			@include font(14px, 400, 20px);
+		}
+	}
+	.modal-form__message {
+		width: 368px;
+		margin-bottom: 32px;
+		&::placeholder {
+			@include font(14px, 400, 20px);
+		}
+	}
+	.modal-form {
+		align-items: center;
+	}
 
-    &::placeholder {
-      @include font(14px, 400, 20px);
-    }
-  }
-  .modal-form__message {
-    width: 368px;
-    margin-bottom: 40px;
-    &::placeholder {
-      @include font(14px, 400, 20px);
-    }
-  }
-  .modal-form {
-    align-items: center;
-  }
-
-  .modal-form__field {
-    margin-bottom: 16px;
-  }
+	.modal-form__field {
+		margin-bottom: 16px;
+	}
+	.button-modal {
+		@include font(14px, 600, 17px);
+	}
 }
