@@ -16,7 +16,7 @@
 	width: 568px;
 	height: 100vh;
 	max-height: 459px;
-	overflow: auto;
+
 	background-color: #ffffff;
 
 	border: 2px solid #f8d24e;
@@ -63,6 +63,10 @@ iframe {
 	}
 }
 @media screen and (min-width: 768px) {
+	.modal-read-more__container {
+		max-height: 449px;
+	}
+
 	.modal-read-more__container > .close {
 		top: 20px;
 		right: 20px;

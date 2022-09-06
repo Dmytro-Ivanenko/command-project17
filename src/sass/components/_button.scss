@@ -9,7 +9,8 @@
 	justify-content: center;
 	align-items: center;
 	font-style: normal;
-
+	stroke: var(--second-font-color);
+	fill: var(--second-font-color);
 	@include font(14px, 600, 17px);
 	@include padding-button(12px, 12px, 33px, 33px);
 
@@ -19,19 +20,25 @@
 	&:focus {
 		background-color: var(--active-button);
 		color: var(--alt-font-color);
-	}
-	@extend %animation;
-}
-
-.button-header__svg {
-	margin-left: 15px;
-	fill: var(--second-font-color);
-	&:focus {
+		stroke: var(--alt-font-color);
 		fill: var(--alt-font-color);
 	}
 	@extend %animation;
 }
 
+// .button-header {
+// 	stroke: var(--second-font-color);
+// 	fill: var(--second-font-color);
+// 	&:focus {
+// 		stroke: var(--alt-font-color);
+// 		fill: var(--alt-font-color);
+// 	}
+// 	@extend %animation;
+// }
+
+.button-header__svg {
+	margin-left: 7px;
+}
 .button-hero {
 	// font-family: Montserrat;
 	text-align: center;
@@ -81,31 +88,25 @@
 	justify-content: center;
 	align-items: center;
 	font-style: normal;
-
+	stroke: var(--second-font-color);
+	fill: var(--second-font-color);
 	@include font(14px, 600, 17px);
 	@include padding-button(13px, 13px, 15px, 17px);
 
-  &:hover,
-  &:focus {
-    background-color: #0a8817;
-  }
 	&:hover {
 		background-color: var(--active-button);
 	}
 	&:focus {
 		background-color: var(--active-button);
 		color: var(--alt-font-color);
+		stroke: var(--alt-font-color);
+		fill: var(--alt-font-color);
 	}
 	@extend %animation;
 }
 
 .button-contacts__svg {
 	margin-left: 7px;
-	fill: var(--second-font-color);
-	&:focus {
-		fill: var(--alt-font-color);
-	}
-	@extend %animation;
 }
 
 .button-franchise {
@@ -121,10 +122,10 @@
 	@include font(14px, 600, 17px);
 	@include padding-button(13px, 13px, 31px, 31px);
 
-  &:hover,
-  &:focus {
-    border-color: #0a8817;
-  }
+	&:hover,
+	&:focus {
+		border-color: #0a8817;
+	}
 	&:hover {
 		border-color: var(--active-button);
 	}
