@@ -21,8 +21,8 @@
 	border: 2px solid #f8d24e;
 	border-radius: 10px;
 
-	padding-top: 32px;
-	padding-bottom: 32px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 	padding-left: 55px;
 	padding-right: 55px;
 
@@ -31,23 +31,8 @@
 
 // ____________modal_form
 
-.modal-title {
-	font-family: "Seymour One";
-	font-style: normal;
-	font-weight: 400;
-	font-size: 20px;
-	line-height: 28px;
-
-	display: flex;
-	align-items: center;
-	text-align: center;
-	color: #000000;
-}
-
-
-
 .modal-form {
-    margin-top: 30px;
+    margin-top: 28px;
     display: flex;
     flex-direction: column;
 }
