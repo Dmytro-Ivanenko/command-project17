@@ -32,6 +32,11 @@
     margin-bottom: 28px;
 }
 
+.modal-locations-btn {
+    display: flex;
+    align-self: center;
+}
+
 
 .button-modal {
     align-self: center;
@@ -39,6 +44,8 @@
     
     
 }
+
+
 
 .modal-locations__map iframe {
     width: 100%;
