@@ -28,8 +28,8 @@
 
 .modal__btn-close {
 	position: absolute;
-	top: 20px;
-	right: 20px;
+	top: 8px;
+	right: 8px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -50,6 +50,11 @@
 	&:focus .modal__icon-close,
 	&:hover .modal__icon-close {
 		fill: var(--acc-color);
+	}
+
+	@media screen and (min-width: 768px) {
+		top: 20px;
+		right: 20px;
 	}
 }
 
