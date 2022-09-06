@@ -1,8 +1,11 @@
 .contacts__block {
     position: absolute;
-    top:-325px;
+    top:-370px;
     left: 50%;
     transform: translate(-50%);
+    @media screen and (min-width: 768px) {
+            top: -330px;
+        }
     @media screen and (min-width: 1200px) {
         top: -100px;
     }
@@ -11,7 +14,7 @@
     @include font-line (22px, 12px);
     @include font($fs: 12px, $lh: 22px);
     position: relative;
-    padding-top: 1110px;
+    padding-top: 1050px;
     padding-bottom: 20px;
     background-color: var(--main-bcg);
     font-style: normal;
@@ -106,10 +109,20 @@
     }
 }
 .contacts__link {
-    @include font-line (29px, 16px);
-    @include font($fs: 16px, $lh: 29px);
     font-weight: 500;
     text-decoration: none;
+    @media screen and (min-width: 768px) {
+    @include font-line (26px, 14px);
+    @include font($fs: 14px, $lh: 26px);    
+    }
+    @media screen and (min-width: 1200px) {
+    @include font-line (29px, 16px);
+    @include font($fs: 16px, $lh: 29px);
+    &:hover,
+    &:focus {
+        text-decoration: underline;
+    }
+    }
 }
 .contacts__link--black-color {
   color: var(--first-font-color);  
@@ -136,13 +149,12 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            gap: 16px;
         }
         @media screen and (min-width:1200px) {
             gap: 24px;
         }
 }
 .button--size {
-@media screen and (min-width:768px) {
     width: 196px;
-}
 }
