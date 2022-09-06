@@ -167,11 +167,44 @@
 
 }
 
-// @media screen and (max-width: 1199px) {
-//     .modal {
-//         max-width: 450px;
-//         width: 100%;
+@media screen and (max-width: 767px) {
+	.modal-franchise__container {
+		padding-top: 25px;
+		padding-bottom: 25px;
+		padding-left: 28px;
+		padding-right: 28px;
 
-//     }
+		max-width: 280px;
+		height: 674px;
+	
+	}
 
-// }
+	.modal-about__name {
+		font-weight: 400;
+		font-size: 13px;
+		line-height: 24px;
+		margin-bottom: 20px;
+	}
+	
+	.modal-about__description {
+		@include font(16px, 400, 22px);
+	}
+
+	.modal-form-form {
+		padding-left: 3px;
+		padding-right: 3px;
+		margin-bottom: 20px;
+	}
+
+	.modal-form {
+		margin-top: 20px;
+	}
+
+	.modal-form-field {
+		margin-bottom: 10px;
+	}
+
+
+
+
+}
