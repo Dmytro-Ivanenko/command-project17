@@ -93,7 +93,7 @@
         margin-bottom: 12px;
     }
 }
-.contacts__text {
+.contacts__link--orange-color {
     color: var(--contacts-font-color);
 }
 .contacts__time {
@@ -106,10 +106,13 @@
     }
 }
 .contacts__link {
+    @include font-line (29px, 16px);
+    @include font($fs: 16px, $lh: 29px);
     font-weight: 500;
-    line-height: 1.5;
-    color: var(--first-font-color);
     text-decoration: none;
+}
+.contacts__link--black-color {
+  color: var(--first-font-color);  
 }
 .contacts__list--line::before {
     content: "";
@@ -137,4 +140,9 @@
         @media screen and (min-width:1200px) {
             gap: 24px;
         }
+}
+.button--size {
+@media screen and (min-width:768px) {
+    width: 196px;
+}
 }

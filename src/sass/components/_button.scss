@@ -74,16 +74,6 @@
   &:focus {
     background-color: #0a8817;
   }
-    // @media screen and (max-width:767px) {
-    //   margin-bottom: 16px;
-    // }
-    @media screen and (min-width:768px) {
-      width: 196px;
-      // margin-right: 16px;nnn
-    }
-    // @media screen and (min-width:1200px) {
-    //   margin-right: 24px;
-    // }
 }
 
 .button-contacts__svg {
@@ -108,9 +98,6 @@
   &:hover,
   &:focus {
     border-color: #0a8817;
-  }
-  @media screen and (min-width:768px) {
-    width: 196px;
   }
 }
 
