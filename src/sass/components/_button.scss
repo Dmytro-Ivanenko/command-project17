@@ -85,6 +85,10 @@
 	@include font(14px, 600, 17px);
 	@include padding-button(13px, 13px, 15px, 17px);
 
+  &:hover,
+  &:focus {
+    background-color: #0a8817;
+  }
 	&:hover {
 		background-color: var(--active-button);
 	}
@@ -117,6 +121,10 @@
 	@include font(14px, 600, 17px);
 	@include padding-button(13px, 13px, 31px, 31px);
 
+  &:hover,
+  &:focus {
+    border-color: #0a8817;
+  }
 	&:hover {
 		border-color: var(--active-button);
 	}
