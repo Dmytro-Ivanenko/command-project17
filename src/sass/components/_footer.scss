@@ -5,7 +5,7 @@ footer {
 	display: block;
 	@media screen and (min-width: 1200px) {
 		padding-top: 60px;
-		}
+	}
 }
 
 .footer-container {
@@ -76,6 +76,7 @@ footer {
 }
 .contact-soc__icon {
 	fill: var(--main-bcg);
+	@extend %animation;
 }
 
 .contact-soc__item {
