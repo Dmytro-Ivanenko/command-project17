@@ -1,83 +1,111 @@
-<!-- <div class="backdrop-ingredients">
+<div class="backdrop-ingredients">
     <div class="modal-ingredients">
-        <a href="#" class="close" title="закрыть">×</a>
+        <button class="close modal__btn-close">
+            <svg class="modal__icon-close">
+                <use href="./images/icons/icons.svg#icon-close"></use>
+            </svg>
+        </button>
 
-        <p class="modal-about__name">Chololate icecream</p>
+        <div class="modal-ingredients-menu">
+            <p class="modal-about__name">Chololate icecream</p>
+            
+            <div class="modal-ingredients__icecrem">
+                <img class="modal-ingredients__icecrem-img" src="./images/by-now/chololate-icecrem@1x.png" style="border-radius: 50%" alt="Chololate icecream" />
+            </div>
+            
+            
+            <ul class="value">
+                <li class="value__calories">
+                    <div class="value__calories-container">
+                        <p class="value__calories-weight">320</p>
+                        <p class="value__calories-meaning">kcal</p>
+                    </div>
+                    
+                </li>
+            
+                <li class="value__calories">
+                    <div class="value__calories-container">
+                        <p  class="value__calories-weight">4g</p>
+                        <p class="value__calories-meaning">Protein...</p>
+                    </div>
+                
+                </li>
+            
+                <li class="value__calories">
+                    <div  class="value__calories-container">
+                        <p  class="value__calories-weight">8,2g</p>
+                        <p class="value__calories-meaning">Fats</p>
 
-        <p class="modal-ingredients__icecrem">
-            <img src="./images/by-now/chololate-icecrem@1x.png" style="border-radius: 50%" alt="Chololate icecream" />
-        </p>
-
-        <p class="modal-about__title">Ingredients</p>
-
-        <ul>
-            <li>
-                <p>320</p>
-                <p>kcal</p>
-            </li>
-
-            <li>
-                <p>4g</p>
-                <p>Protein...</p>
-            </li>
-
-            <li>
-                <p>8,2g</p>
-                <p>Fats</p>
-            </li>
-
-            <li>
-                <p>40,4g</p>
-                <p>Carbs</p>
-            </li>
-        </ul>
-
-        <div>
-            <ul>
-                <li>Milk</li>
-                <li>Belgian chocolate</li>
-                <li>Cream</li>
-                <li>Cocoa powder</li>
-                <li>Sugar</li>
-                <li>Vanilla sugar</li>
+                    </div>
+                </li>
+            
+                <li class="value__calories">
+                    <div  class="value__calories-container">
+                        <p  class="value__calories-weight">40,4g</p>
+                        <p class="value__calories-meaning">Carbs</p>
+                    </div>
+                    
+                </li>
             </ul>
             
-            <ul>
-                <li>100ml</li>
-                <li>20g</li>
-                <li>150 ml</li>
-                <li>30g</li>
-                <li>40g</li>
-                <li>10g</li>
-            </ul>
+            <p class="modal-ingredients__title">Ingredients</p>
+            
+            <table class="ingredients-table">
+                <tr class="ingredients__stroke">
+                    <td class="ingredients__td">Milk</td>
+                    <td class="ingredients__td_right">100ml</td>
+                </tr>
+                <tr class="ingredients__stroke">
+                    <td class="ingredients__td">Belgian chocolate</td>
+                    <td class="ingredients__td_right">20g</td>
+                </tr>
+                <tr class="ingredients__stroke">
+                    <td class="ingredients__td">Cream</td>
+                    <td class="ingredients__td_right">150 ml</td>
+                </tr>
+                <tr class="ingredients__stroke">
+                    <td class="ingredients__td">Cocoa powder</td>
+                    <td class="ingredients__td_right">30g</td>
+                </tr>
+                <tr class="ingredients__stroke">
+                    <td class="ingredients__td">Sugar</td>
+                    <td class="ingredients__td_right">40g</td>
+                </tr>
+                <tr class="ingredients__stroke">
+                    <td class="ingredients__td">Vanilla sugar</td>
+                    <td class="ingredients__td_right">10g</td>
+                </tr>
+            </table>
+            
+            
+            <form class="modal-ingredients__form">
+                <div class="modal-ingredients__form-info">
+                    <div class="modal-form-field">
+                        <input type="text" name="user_name" class="modal-form-field-input" required pattern="^[a-zA-Z]+$"
+                            minlength="2">
+                        <label for="name" class="modal-form-field-input-desc">Name</label>
+                    </div>
+            
+                    <div class="modal-form-field">
+                        <input type="tel" name="user_phone" class="modal-form-field-input" required pattern="[789][0-9]{9}">
+                        <label for="tel" class="modal-form-field-input-desc">Phone</label>
+                    </div>
+            
+                    <div class="modal-form-comment">
+                        <textarea name="user_comment" class="modal-form-textarea"></textarea>
+                        <label class="modal-form-field-input-comment">Comment</label>
+                    </div>
+                </div>
+            
+                <button type="button" class="button-modal modal-btn-ice">Submit</button>
+            </form>
 
         </div>
 
         
 
-        <form>
-            <div>
-                <div class="modal-form-field">
-                    <input type="text" name="user_name" class="modal-form-field-input" required pattern="^[a-zA-Z]+$" minlength="2">
-                    <label for="name" class="modal-form-field-input-desc">Name</label>
-                </div>
-                
-                <div class="modal-form-field">
-                    <input type="tel" name="user_phone" class="modal-form-field-input" required pattern="[789][0-9]{9}">
-                    <label for="tel" class="modal-form-field-input-desc">Phone</label>
-                </div>
-                
-                <div class="modal-form-comment">
-                    <textarea name="user_comment" class="modal-form-textarea"></textarea>
-                    <label class="modal-form-field-input-comment">Comment</label>
-                </div>
-            </div>
-
-            <button type="button" class="button-modal">Submit</button>
-        </form>
-
         
 
 
     </div>
-</div> -->
+</div>
