@@ -1,9 +1,9 @@
 .modal-ingredients {
     position: absolute;
-    top: 50%;
+    top: 20%;
     left: 50%;
-    transform: translate(35%, -50%);
-    width: 528px;
+    transform: translate(-40%, -50%);
+    width: 568px;
     height: 995px;
     background-color: #FFFFFF;
     
@@ -12,8 +12,8 @@
     
     padding-top: 30px;
     padding-bottom: 30px;
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-left: 38px;
+    padding-right: 38px;
     overflow-y: auto;
 
 }
@@ -22,11 +22,154 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
-    width: 528px;
+    // width: 100vw;
+    // height: 100vh;
+    width: 568px;
     height: 995px;
+
     background-color: rgb(0, 0, 0, 0.2);
     z-index: 100;
 }
 
+.modal-ingredients-menu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.modal-about__name {
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+
+    align-items: center;
+    text-align: center;
+    color: #131313;
+    margin-bottom: 16px;
+}
+
+.modal-ingredients__icecrem-img {
+    z-index: 2;
+}
+
+.modal-ingredients__icecrem{
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 23px;
+        
+        &::before {
+            position: absolute;
+            content: '';
+            top: 50%;
+            left: 50%;
+            width: 132px;
+            height: 131px;
+            border-radius: 50%;
+            background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #d9d9d9;
+            box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+            transform: translate(-50%, -45%);
+        }
+
+}
+
+.value {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.value__calories {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 69px;
+    height: 94px;
+    border: 2px solid #9cbe8f;
+    border-radius: 40px;
+    position: relative;
+    
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 6px;
+            width: 53px;
+            height: 53px;
+            border-radius: 50%;
+            border: 2px solid #9cbe8f;
+            background: #9cbe8f;
+            box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+        }
+}
+
+.value__calories-weight {
+    position: relative;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.value__calories-meaning{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    margin-top: 19px;
+}
+
+.modal-ingredients__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 22px;
+    margin-top: 45px;
+
+}
+
+
+.ingredients-table {
+    text-align: left;
+    width: 488px;
+    margin-bottom: 44px;
+}
+
+.ingredients__td {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 176%;
+    padding-bottom: 11px;
+}
+
+.ingredients__td_right{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 176%;
+    text-align: end;
+}
+
+.modal-form-field {
+    width: 368px;
+}
+
+.modal-btn-ice {
+    margin-top: 30px;
+    padding: 12px 34px;
+}
