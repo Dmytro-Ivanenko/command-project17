@@ -71,7 +71,20 @@
 		letter-spacing: 0.06em;
 	}
 }
-
+.about-section__title{
+	color: #ffffff4d;
+  
+	background-image: url(../images/about/text1.png);
+	background-clip: text;
+	-webkit-background-clip: text;
+	animation: wave 15s infinite;
+  }
+  @keyframes wave {
+		from { background-position: left 0 top 0;
+		}
+	
+	   to { background-position: left 600px top 0;}
+	  }
 .about-section__container {
 	// padding-top: 0;
 	background-image: url(../images/about/mob-sun@1x.png);
