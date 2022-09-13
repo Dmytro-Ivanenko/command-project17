@@ -60,6 +60,35 @@
 	margin-bottom: 16px;
 }
 
+.choco-anim {
+	position: relative;
+}
+
+.choco-anim:hover {
+	color: #f8d24e;
+	transition-duration: 1s;
+}
+
+.choco-anim::before {
+	transform: scaleX(0);
+	transform-origin: bottom right;
+}
+
+.choco-anim:hover::before {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+}
+
+.choco-anim::before {
+	content: "";
+	display: block;
+	position: absolute;
+	inset: 0 0 0 0;
+	background: rgba(156, 190, 143, 0.7);
+	z-index: -1;
+	transition: transform 0.3s ease;
+}
+
 .modal-ingredients__icecrem-img {
 	z-index: 2;
 }
