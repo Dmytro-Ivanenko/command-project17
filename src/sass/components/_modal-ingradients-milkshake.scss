@@ -1,0 +1,329 @@
+.modal-ingredients {
+    position: absolute;
+    width: 568px;
+    height: 995px;
+    background-color: #ffffff;
+
+    border: 2px solid #f8d24e;
+    border-radius: 10px;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 38px;
+    padding-right: 38px;
+
+    // overflow-y: auto;
+
+    @media screen and (max-width: 767.98px) {
+        transform: scale(0.5);
+    }
+
+    @media screen and (min-width: 768px) {
+        transform: scale(0.7);
+    }
+
+    @media screen and (min-width: 1200px) {
+        transform: scale(0.9);
+    }
+}
+
+.backdrop-ingredients {
+    width: 568px;
+    height: 995px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: auto;
+    transform: translate(-50%, -50%);
+
+    z-index: 100;
+}
+
+.modal-ingredients-menu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.modal-about__name {
+    font-family: "Seymour One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+
+    align-items: center;
+    text-align: center;
+    color: #131313;
+    margin-bottom: 16px;
+}
+
+.milk-anim {
+    position: relative;
+}
+
+.milk-anim:hover {
+    color: #f8d24e;
+    transition-duration: 1s;
+}
+
+.milk-anim::before {
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
+
+.milk-anim:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.milk-anim::before {
+    content: "";
+    display: block;
+    position: absolute;
+    inset: 0 0 0 0;
+    background: rgba(156, 190, 143, 0.7);
+    z-index: -1;
+    transition: transform 0.3s ease;
+}
+
+.modal-ingredients__icecrem-img {
+    z-index: 2;
+}
+
+.modal-ingredients__icecrem {
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 23px;
+
+    &::before {
+        position: absolute;
+        content: "";
+        top: 50%;
+        left: 50%;
+        width: 132px;
+        height: 131px;
+        border-radius: 50%;
+        background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #d9d9d9;
+        box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+        transform: translate(-50%, -45%);
+    }
+}
+
+.value {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.value__calories {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 69px;
+    height: 94px;
+    border: 2px solid #9cbe8f;
+    border-radius: 40px;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 6px;
+        width: 53px;
+        height: 53px;
+        border-radius: 50%;
+        border: 2px solid #9cbe8f;
+        background: #9cbe8f;
+        box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+    }
+}
+
+.value__calories-weight {
+    position: relative;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.value__calories-meaning {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    margin-top: 19px;
+}
+
+.modal-ingredients__title {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 22px;
+    margin-top: 45px;
+}
+
+.ingredients-table {
+    text-align: left;
+    width: 488px;
+    margin-bottom: 40px;
+}
+
+.ingredients__td {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 176%;
+    padding-bottom: 11px;
+}
+
+.ingredients__td_right {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 176%;
+    text-align: end;
+}
+
+.modal-form-box {
+    width: 368px;
+}
+
+.modal-btn-ice {
+    // margin-top: 30px;
+    padding: 12px 34px;
+}
+
+.modal-ingredients__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-ingredients__form-info {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 32px;
+}
+
+.modal-form-box {
+    position: relative;
+    display: block;
+    margin-bottom: 16px;
+}
+
+.modal-form-input-box:focus~.modal-form-desc-box {
+    top: -0.5px;
+    color: #0a8817;
+    font-size: 10px;
+    padding: 0 10px;
+    border-left: 1px solid #0a8817;
+    border-right: 1px solid #0a8817;
+
+    background: #ffffff;
+}
+
+.modal-form-input-box {
+    width: 100%;
+    height: 42px;
+    background: rgba(248, 210, 78, 0.1);
+    border: 1px solid #84a178;
+    border-radius: 10px;
+    padding-left: 16px;
+    color: #000000;
+
+    &::placeholder {
+        font-family: "Montserrat";
+        @include font(12px, 400, 17px);
+        color: var(--second-font-color);
+    }
+
+    &:focus {
+        outline: none;
+        border: 1.5px solid #0a8817;
+    }
+}
+
+.modal-form-desc-box {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+
+    text-transform: capitalize;
+    pointer-events: none;
+
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-comment-box {
+    position: relative;
+    display: block;
+}
+
+.modal-form-textarea-box {
+    resize: none;
+    width: 100%;
+    height: 84px;
+    padding: 10px 16px;
+    background: rgba(248, 210, 78, 0.1);
+    border: 1px solid #84a178;
+    border-radius: 10px;
+    padding-left: 16px;
+    color: #000000;
+    transition: border 250mc cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-textarea-box:focus {
+    outline: none;
+    border: 1.5px solid #0a8817;
+}
+
+.modal-form-comment-box-info {
+    position: absolute;
+    top: 20%;
+    left: 16px;
+    transform: translateY(-20%);
+    text-transform: capitalize;
+    pointer-events: none;
+
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-textarea-box:focus~.modal-form-comment-box-info {
+    top: -4px;
+    color: #0a8817;
+    font-size: 10px;
+    padding: 0 10px;
+    border-left: 1px solid #0a8817;
+    border-right: 1px solid #0a8817;
+
+    background: #ffffff;
+}
